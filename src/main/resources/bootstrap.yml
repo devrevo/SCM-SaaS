@@ -1,0 +1,8 @@
+spring:
+  cloud:
+    config:
+      name: scm-saas
+      uri: http://localhost:8888
+    discovery:
+      enabled: true
+      service-id: configserver

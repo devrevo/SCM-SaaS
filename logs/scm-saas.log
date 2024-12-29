@@ -1,0 +1,123 @@
+2024-12-29 15:57:40 INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.2.Final
+2024-12-29 15:57:40 INFO  c.s.SCM_SaaS.ScmSaaSApplication - Starting ScmSaaSApplication using Java 20.0.2 with PID 50665 (/Users/ayoub/Desktop/projects/SCM-SaaS/SCM-SaaS/target/classes started by ayoub in /Users/ayoub/Desktop/projects/SCM-SaaS/SCM-SaaS)
+2024-12-29 15:57:40 INFO  c.s.SCM_SaaS.ScmSaaSApplication - No active profile set, falling back to 1 default profile: "default"
+2024-12-29 15:57:40 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-12-29 15:57:40 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-12-29 15:57:40 INFO  o.s.b.d.c.l.DockerComposeLifecycleManager - Using Docker Compose file /Users/ayoub/Desktop/projects/SCM-SaaS/SCM-SaaS/compose.yaml
+2024-12-29 15:57:42 INFO  o.s.b.docker.compose.core.DockerCli -  Network scm-saas_default  Creating
+2024-12-29 15:57:42 INFO  o.s.b.docker.compose.core.DockerCli -  Network scm-saas_default  Created
+2024-12-29 15:57:42 INFO  o.s.b.docker.compose.core.DockerCli -  Container scm-saas-postgres-1  Creating
+2024-12-29 15:57:42 INFO  o.s.b.docker.compose.core.DockerCli -  Container scm-saas-mongodb-1  Creating
+2024-12-29 15:57:42 INFO  o.s.b.docker.compose.core.DockerCli -  Container scm-saas-redis-1  Creating
+2024-12-29 15:57:42 INFO  o.s.b.docker.compose.core.DockerCli -  Container scm-saas-redis-1  Created
+2024-12-29 15:57:42 INFO  o.s.b.docker.compose.core.DockerCli -  Container scm-saas-mongodb-1  Created
+2024-12-29 15:57:42 INFO  o.s.b.docker.compose.core.DockerCli -  Container scm-saas-postgres-1  Created
+2024-12-29 15:57:42 INFO  o.s.b.docker.compose.core.DockerCli -  Container scm-saas-postgres-1  Starting
+2024-12-29 15:57:42 INFO  o.s.b.docker.compose.core.DockerCli -  Container scm-saas-mongodb-1  Starting
+2024-12-29 15:57:42 INFO  o.s.b.docker.compose.core.DockerCli -  Container scm-saas-redis-1  Starting
+2024-12-29 15:57:44 INFO  o.s.b.docker.compose.core.DockerCli -  Container scm-saas-redis-1  Started
+2024-12-29 15:57:44 INFO  o.s.b.docker.compose.core.DockerCli -  Container scm-saas-mongodb-1  Started
+2024-12-29 15:57:44 INFO  o.s.b.docker.compose.core.DockerCli -  Container scm-saas-postgres-1  Started
+2024-12-29 15:57:44 INFO  o.s.b.docker.compose.core.DockerCli -  Container scm-saas-mongodb-1  Waiting
+2024-12-29 15:57:44 INFO  o.s.b.docker.compose.core.DockerCli -  Container scm-saas-postgres-1  Waiting
+2024-12-29 15:57:44 INFO  o.s.b.docker.compose.core.DockerCli -  Container scm-saas-redis-1  Waiting
+2024-12-29 15:57:44 INFO  o.s.b.docker.compose.core.DockerCli -  Container scm-saas-mongodb-1  Healthy
+2024-12-29 15:57:44 INFO  o.s.b.docker.compose.core.DockerCli -  Container scm-saas-postgres-1  Healthy
+2024-12-29 15:57:44 INFO  o.s.b.docker.compose.core.DockerCli -  Container scm-saas-redis-1  Healthy
+2024-12-29 15:57:56 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-12-29 15:57:56 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-29 15:57:56 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 9 ms. Found 0 JPA repository interfaces.
+2024-12-29 15:57:56 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-12-29 15:57:56 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2024-12-29 15:57:56 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 0 ms. Found 0 MongoDB repository interfaces.
+2024-12-29 15:57:56 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-12-29 15:57:56 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-12-29 15:57:56 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 0 ms. Found 0 Redis repository interfaces.
+2024-12-29 15:57:57 INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=fc5caad0-c00b-3c51-9285-0c5c25a01d0a
+2024-12-29 15:57:57 WARN  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$SpringCGLIB$$0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [annotationActionEndpointMapping] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2024-12-29 15:57:57 INFO  o.s.w.s.a.s.AnnotationActionEndpointMapping - Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2024-12-29 15:57:57 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-12-29 15:57:58 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2650 ms
+2024-12-29 15:57:58 WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Failed to initialize dependency 'liquibase' of LoadTimeWeaverAware bean 'entityManagerFactory': Error creating bean with name 'liquibase' defined in class path resource [org/springframework/boot/autoconfigure/liquibase/LiquibaseAutoConfiguration$LiquibaseConfiguration.class]: liquibase.exception.CommandExecutionException: liquibase.exception.ChangeLogParseException: classpath:/db/changelog/db.changelog-master.yaml does not exist
+2024-12-29 15:57:58 INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-12-29 15:57:58 ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Liquibase failed to start because no changelog could be found at 'classpath:/db/changelog/db.changelog-master.yaml'.
+
+Action:
+
+Make sure a Liquibase changelog is present at the configured path.
+
+2024-12-29 15:58:05 INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.2.Final
+2024-12-29 15:58:05 INFO  c.s.SCM_SaaS.ScmSaaSApplication - Starting ScmSaaSApplication using Java 20.0.2 with PID 51462 (/Users/ayoub/Desktop/projects/SCM-SaaS/SCM-SaaS/target/classes started by ayoub in /Users/ayoub/Desktop/projects/SCM-SaaS/SCM-SaaS)
+2024-12-29 15:58:05 INFO  c.s.SCM_SaaS.ScmSaaSApplication - No active profile set, falling back to 1 default profile: "default"
+2024-12-29 15:58:05 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-12-29 15:58:05 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-12-29 15:58:05 INFO  o.s.b.d.c.l.DockerComposeLifecycleManager - Using Docker Compose file /Users/ayoub/Desktop/projects/SCM-SaaS/SCM-SaaS/compose.yaml
+2024-12-29 15:58:06 INFO  o.s.b.docker.compose.core.DockerCli -  Container scm-saas-postgres-1  Created
+2024-12-29 15:58:06 INFO  o.s.b.docker.compose.core.DockerCli -  Container scm-saas-redis-1  Created
+2024-12-29 15:58:06 INFO  o.s.b.docker.compose.core.DockerCli -  Container scm-saas-mongodb-1  Created
+2024-12-29 15:58:06 INFO  o.s.b.docker.compose.core.DockerCli -  Container scm-saas-postgres-1  Starting
+2024-12-29 15:58:06 INFO  o.s.b.docker.compose.core.DockerCli -  Container scm-saas-mongodb-1  Starting
+2024-12-29 15:58:06 INFO  o.s.b.docker.compose.core.DockerCli -  Container scm-saas-redis-1  Starting
+2024-12-29 15:58:06 INFO  o.s.b.docker.compose.core.DockerCli -  Container scm-saas-postgres-1  Started
+2024-12-29 15:58:06 INFO  o.s.b.docker.compose.core.DockerCli -  Container scm-saas-redis-1  Started
+2024-12-29 15:58:06 INFO  o.s.b.docker.compose.core.DockerCli -  Container scm-saas-mongodb-1  Started
+2024-12-29 15:58:06 INFO  o.s.b.docker.compose.core.DockerCli -  Container scm-saas-redis-1  Waiting
+2024-12-29 15:58:06 INFO  o.s.b.docker.compose.core.DockerCli -  Container scm-saas-mongodb-1  Waiting
+2024-12-29 15:58:06 INFO  o.s.b.docker.compose.core.DockerCli -  Container scm-saas-postgres-1  Waiting
+2024-12-29 15:58:07 INFO  o.s.b.docker.compose.core.DockerCli -  Container scm-saas-mongodb-1  Healthy
+2024-12-29 15:58:07 INFO  o.s.b.docker.compose.core.DockerCli -  Container scm-saas-redis-1  Healthy
+2024-12-29 15:58:07 INFO  o.s.b.docker.compose.core.DockerCli -  Container scm-saas-postgres-1  Healthy
+2024-12-29 15:58:10 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-12-29 15:58:10 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-29 15:58:10 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 8 ms. Found 0 JPA repository interfaces.
+2024-12-29 15:58:10 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-12-29 15:58:10 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2024-12-29 15:58:10 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 0 ms. Found 0 MongoDB repository interfaces.
+2024-12-29 15:58:10 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-12-29 15:58:10 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-12-29 15:58:10 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 0 ms. Found 0 Redis repository interfaces.
+2024-12-29 15:58:10 INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=fc5caad0-c00b-3c51-9285-0c5c25a01d0a
+2024-12-29 15:58:10 WARN  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$SpringCGLIB$$0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [annotationActionEndpointMapping] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2024-12-29 15:58:10 INFO  o.s.w.s.a.s.AnnotationActionEndpointMapping - Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2024-12-29 15:58:11 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-12-29 15:58:11 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-12-29 15:58:11 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-12-29 15:58:11 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.34]
+2024-12-29 15:58:11 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-12-29 15:58:11 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1997 ms
+2024-12-29 15:58:11 INFO  liquibase.database - Set default schema name to public
+2024-12-29 15:58:11 INFO  liquibase.command - Logging exception.
+2024-12-29 15:58:11 INFO  liquibase.ui - ERROR: Exception Details
+2024-12-29 15:58:11 INFO  liquibase.ui - ERROR: Exception Primary Class:  ChangeLogParseException
+2024-12-29 15:58:11 INFO  liquibase.ui - ERROR: Exception Primary Reason:  classpath:/db/changelog/db.changelog-master.yaml does not exist
+2024-12-29 15:58:11 INFO  liquibase.ui - ERROR: Exception Primary Source:  4.29.2
+2024-12-29 15:58:11 INFO  liquibase.command - Command execution complete
+2024-12-29 15:58:11 WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Failed to initialize dependency 'liquibase' of LoadTimeWeaverAware bean 'entityManagerFactory': Error creating bean with name 'liquibase' defined in class path resource [org/springframework/boot/autoconfigure/liquibase/LiquibaseAutoConfiguration$LiquibaseConfiguration.class]: liquibase.exception.CommandExecutionException: liquibase.exception.ChangeLogParseException: classpath:/db/changelog/db.changelog-master.yaml does not exist
+2024-12-29 15:58:11 INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2024-12-29 15:58:11 INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-12-29 15:58:11 ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Liquibase failed to start because no changelog could be found at 'classpath:/db/changelog/db.changelog-master.yaml'.
+
+Action:
+
+Make sure a Liquibase changelog is present at the configured path.
+
