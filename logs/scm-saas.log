@@ -1,0 +1,1567 @@
+2025-01-08 12:03:03 INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.2.Final
+2025-01-08 12:03:03 INFO  c.s.SCM_SaaS.ScmSaaSApplication - Starting ScmSaaSApplication using Java 17.0.8 with PID 27952 (/Users/ayoub/Desktop/projects/SCM-SaaS/SCM-SaaS/target/classes started by ayoub in /Users/ayoub/Desktop/projects/SCM-SaaS/SCM-SaaS)
+2025-01-08 12:03:03 DEBUG c.s.SCM_SaaS.ScmSaaSApplication - Running with Spring Boot v3.4.1, Spring v6.2.1
+2025-01-08 12:03:03 INFO  c.s.SCM_SaaS.ScmSaaSApplication - No active profile set, falling back to 1 default profile: "default"
+2025-01-08 12:03:03 INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Fetching config from server at : http://localhost:8888
+2025-01-08 12:03:03 INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Located environment: name=scm-saas, profiles=[default], label=null, version=12b016543c5a5af219c6e60b91b5b2dd6f076525, state=
+2025-01-08 12:03:03 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-01-08 12:03:03 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-01-08 12:03:03 INFO  o.s.b.d.c.l.DockerComposeLifecycleManager - Using Docker Compose file /Users/ayoub/Desktop/projects/SCM-SaaS/SCM-SaaS/compose.yaml
+2025-01-08 12:03:04 INFO  o.s.b.d.c.l.DockerComposeLifecycleManager - There are already Docker Compose services running, skipping startup
+2025-01-08 12:03:08 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-01-08 12:03:08 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-01-08 12:03:08 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 20 ms. Found 0 JPA repository interfaces.
+2025-01-08 12:03:08 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-01-08 12:03:08 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2025-01-08 12:03:08 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 2 ms. Found 0 MongoDB repository interfaces.
+2025-01-08 12:03:08 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-01-08 12:03:08 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-01-08 12:03:08 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 2 ms. Found 0 Redis repository interfaces.
+2025-01-08 12:03:08 INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=ff7b4ea1-5188-323b-8d10-492f564c156f
+2025-01-08 12:03:08 WARN  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$SpringCGLIB$$0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [annotationActionEndpointMapping] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2025-01-08 12:03:08 INFO  o.s.w.s.a.s.AnnotationActionEndpointMapping - Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2025-01-08 12:03:09 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-01-08 12:03:09 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-01-08 12:03:09 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-01-08 12:03:09 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-01-08 12:03:09 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-01-08 12:03:09 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 5226 ms
+2025-01-08 12:03:09 DEBUG o.s.w.f.ServerHttpObservationFilter - Filter 'webMvcObservationFilter' configured for use
+2025-01-08 12:03:09 DEBUG liquibase.servicelocator - Loaded liquibase.configuration.AutoloadedConfigurations instance liquibase.GlobalConfiguration
+2025-01-08 12:03:09 DEBUG liquibase.servicelocator - Loaded liquibase.configuration.AutoloadedConfigurations instance liquibase.integration.commandline.LiquibaseCommandLineConfiguration
+2025-01-08 12:03:09 DEBUG liquibase.servicelocator - Loaded liquibase.configuration.AutoloadedConfigurations instance liquibase.hub.HubConfiguration
+2025-01-08 12:03:09 DEBUG liquibase.servicelocator - Loaded liquibase.configuration.AutoloadedConfigurations instance liquibase.logging.core.DefaultLoggerConfiguration
+2025-01-08 12:03:09 DEBUG liquibase.servicelocator - Loaded liquibase.configuration.AutoloadedConfigurations instance liquibase.sql.SqlConfiguration
+2025-01-08 12:03:09 DEBUG liquibase.servicelocator - Loaded liquibase.configuration.AutoloadedConfigurations instance liquibase.parser.ChangeLogParserConfiguration
+2025-01-08 12:03:09 DEBUG liquibase.configuration - Found ConfigurationDefinitions in liquibase.GlobalConfiguration
+2025-01-08 12:03:09 DEBUG liquibase.configuration - Found ConfigurationDefinitions in liquibase.integration.commandline.LiquibaseCommandLineConfiguration
+2025-01-08 12:03:09 DEBUG liquibase.configuration - Found ConfigurationDefinitions in liquibase.hub.HubConfiguration
+2025-01-08 12:03:09 DEBUG liquibase.configuration - Found ConfigurationDefinitions in liquibase.logging.core.DefaultLoggerConfiguration
+2025-01-08 12:03:09 DEBUG liquibase.configuration - Found ConfigurationDefinitions in liquibase.sql.SqlConfiguration
+2025-01-08 12:03:09 DEBUG liquibase.configuration - Found ConfigurationDefinitions in liquibase.parser.ChangeLogParserConfiguration
+2025-01-08 12:03:09 DEBUG liquibase.servicelocator - Loaded liquibase.configuration.ConfigurationValueProvider instance liquibase.configuration.core.DeprecatedConfigurationValueProvider
+2025-01-08 12:03:09 DEBUG liquibase.servicelocator - Loaded liquibase.configuration.ConfigurationValueProvider instance liquibase.configuration.core.SystemPropertyValueProvider
+2025-01-08 12:03:09 DEBUG liquibase.servicelocator - Loaded liquibase.configuration.ConfigurationValueProvider instance liquibase.configuration.core.ScopeValueProvider
+2025-01-08 12:03:09 DEBUG liquibase.servicelocator - Loaded liquibase.configuration.ConfigurationValueProvider instance liquibase.configuration.core.EnvironmentValueProvider
+2025-01-08 12:03:09 DEBUG liquibase.servicelocator - Loaded liquibase.logging.LogService instance liquibase.logging.core.BufferedLogService
+2025-01-08 12:03:09 DEBUG liquibase.servicelocator - Loaded liquibase.logging.LogService instance liquibase.logging.core.CompositeLogService
+2025-01-08 12:03:09 DEBUG liquibase.servicelocator - Loaded liquibase.logging.LogService instance liquibase.logging.core.JavaLogService
+2025-01-08 12:03:09 DEBUG liquibase.servicelocator - Loaded liquibase.servicelocator.ServiceLocator instance liquibase.servicelocator.StandardServiceLocator
+2025-01-08 12:03:10 DEBUG liquibase.configuration - No configuration value for liquibase.shouldRun aka should.run found
+2025-01-08 12:03:10 DEBUG liquibase.configuration - Configuration liquibase.shouldRun is using the default value of true
+2025-01-08 12:03:10 DEBUG liquibase.servicelocator - Loaded liquibase.database.Database instance liquibase.database.core.CockroachDatabase
+2025-01-08 12:03:10 DEBUG liquibase.servicelocator - Loaded liquibase.database.Database instance liquibase.database.core.DB2Database
+2025-01-08 12:03:10 DEBUG liquibase.servicelocator - Loaded liquibase.database.Database instance liquibase.database.core.Db2zDatabase
+2025-01-08 12:03:10 DEBUG liquibase.servicelocator - Loaded liquibase.database.Database instance liquibase.database.core.DerbyDatabase
+2025-01-08 12:03:10 DEBUG liquibase.servicelocator - Loaded liquibase.database.Database instance liquibase.database.core.EnterpriseDBDatabase
+2025-01-08 12:03:10 DEBUG liquibase.servicelocator - Loaded liquibase.database.Database instance liquibase.database.core.FirebirdDatabase
+2025-01-08 12:03:10 DEBUG liquibase.servicelocator - Loaded liquibase.database.Database instance liquibase.database.core.H2Database
+2025-01-08 12:03:10 DEBUG liquibase.servicelocator - Loaded liquibase.database.Database instance liquibase.database.core.HsqlDatabase
+2025-01-08 12:03:10 DEBUG liquibase.servicelocator - Loaded liquibase.database.Database instance liquibase.database.core.InformixDatabase
+2025-01-08 12:03:10 DEBUG liquibase.servicelocator - Loaded liquibase.database.Database instance liquibase.database.core.Ingres9Database
+2025-01-08 12:03:10 DEBUG liquibase.servicelocator - Loaded liquibase.database.Database instance liquibase.database.core.MSSQLDatabase
+2025-01-08 12:03:10 DEBUG liquibase.servicelocator - Loaded liquibase.database.Database instance liquibase.database.core.MariaDBDatabase
+2025-01-08 12:03:10 DEBUG liquibase.servicelocator - Loaded liquibase.database.Database instance liquibase.database.core.MockDatabase
+2025-01-08 12:03:10 DEBUG liquibase.servicelocator - Loaded liquibase.database.Database instance liquibase.database.core.MySQLDatabase
+2025-01-08 12:03:10 DEBUG liquibase.servicelocator - Loaded liquibase.database.Database instance liquibase.database.core.OracleDatabase
+2025-01-08 12:03:10 DEBUG liquibase.servicelocator - Loaded liquibase.database.Database instance liquibase.database.core.PostgresDatabase
+2025-01-08 12:03:10 DEBUG liquibase.servicelocator - Loaded liquibase.database.Database instance liquibase.database.core.SQLiteDatabase
+2025-01-08 12:03:10 DEBUG liquibase.servicelocator - Loaded liquibase.database.Database instance liquibase.database.core.SybaseASADatabase
+2025-01-08 12:03:10 DEBUG liquibase.servicelocator - Loaded liquibase.database.Database instance liquibase.database.core.SybaseDatabase
+2025-01-08 12:03:10 DEBUG liquibase.servicelocator - Loaded liquibase.database.Database instance liquibase.database.core.UnsupportedDatabase
+2025-01-08 12:03:10 DEBUG liquibase.servicelocator - Loaded liquibase.database.Database instance liquibase.database.core.SnowflakeDatabase
+2025-01-08 12:03:10 DEBUG liquibase.database - Connected to master_user@jdbc:postgresql://localhost:5432/scm_master?adaptiveFetch=false&adaptiveFetchMaximum=-1&adaptiveFetchMinimum=0&allowEncodingChanges=false&ApplicationName=PostgreSQL+JDBC+Driver&autosave=never&binaryTransfer=true&binaryTransferDisable=&binaryTransferEnable=&cancelSignalTimeout=10&cleanupSavepoints=false&connectTimeout=10&databaseMetadataCacheFields=65536&databaseMetadataCacheFieldsMiB=5&defaultRowFetchSize=0&disableColumnSanitiser=false&escapeSyntaxCallMode=select&groupStartupParameters=false&gssEncMode=allow&gsslib=auto&gssResponseTimeout=5000&hideUnprivilegedObjects=false&hostRecheckSeconds=10&jaasApplicationName=pgjdbc&jaasLogin=true&loadBalanceHosts=false&loginTimeout=0&logServerErrorDetail=true&logUnclosedConnections=false&preferQueryMode=extended&preparedStatementCacheQueries=256&preparedStatementCacheSizeMiB=5&prepareThreshold=5&quoteReturningIdentifiers=true&readOnly=false&readOnlyMode=transaction&receiveBufferSize=-1&reWriteBatchedInserts=false&sendBufferSize=-1&socketTimeout=0&sslfactory=org.postgresql.ssl.LibPQFactory&sslResponseTimeout=5000&sspiServiceClass=POSTGRES&targetServerType=any&tcpKeepAlive=false&tcpNoDelay=true&unknownLength=2147483647&useSpnego=false&xmlFactoryFactory=
+2025-01-08 12:03:10 DEBUG liquibase.database - Setting auto commit to false from true
+2025-01-08 12:03:10 DEBUG liquibase.configuration - No configuration value for liquibase.databaseChangelogLockTableName aka liquibase.databaseChangeLogLockTableName found
+2025-01-08 12:03:10 DEBUG liquibase.configuration - Configuration liquibase.databaseChangelogLockTableName is using the default value of DATABASECHANGELOGLOCK
+2025-01-08 12:03:10 DEBUG liquibase.configuration - No configuration value for liquibase.databaseChangelogTableName aka liquibase.databaseChangeLogTableName found
+2025-01-08 12:03:10 DEBUG liquibase.configuration - Configuration liquibase.databaseChangelogTableName is using the default value of DATABASECHANGELOG
+2025-01-08 12:03:10 DEBUG liquibase.servicelocator - Loaded liquibase.executor.Executor instance liquibase.executor.jvm.JdbcExecutor
+2025-01-08 12:03:10 DEBUG liquibase.servicelocator - Loaded liquibase.executor.Executor instance liquibase.executor.jvm.SnowflakeJdbcExecutor
+2025-01-08 12:03:10 DEBUG liquibase.servicelocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.AddAutoIncrementGenerator
+2025-01-08 12:03:10 DEBUG liquibase.servicelocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.AddAutoIncrementGeneratorDB2
+2025-01-08 12:03:10 DEBUG liquibase.servicelocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.AddAutoIncrementGeneratorHsqlH2
+2025-01-08 12:03:10 DEBUG liquibase.servicelocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.AddAutoIncrementGeneratorInformix
+2025-01-08 12:03:10 DEBUG liquibase.servicelocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.AddAutoIncrementGeneratorMySQL
+2025-01-08 12:03:10 DEBUG liquibase.servicelocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.AddAutoIncrementGeneratorSQLite
+2025-01-08 12:03:10 DEBUG liquibase.servicelocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.AddColumnGenerator
+2025-01-08 12:03:10 DEBUG liquibase.servicelocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.AddColumnGeneratorDefaultClauseBeforeNotNull
+2025-01-08 12:03:10 DEBUG liquibase.servicelocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.AddColumnGeneratorSQLite
+2025-01-08 12:03:10 DEBUG liquibase.servicelocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.AddDefaultValueGenerator
+2025-01-08 12:03:10 DEBUG liquibase.servicelocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.AddDefaultValueGeneratorDerby
+2025-01-08 12:03:10 DEBUG liquibase.servicelocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.AddDefaultValueGeneratorInformix
+2025-01-08 12:03:10 DEBUG liquibase.servicelocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.AddDefaultValueGeneratorMSSQL
+2025-01-08 12:03:10 DEBUG liquibase.servicelocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.AddDefaultValueGeneratorMySQL
+2025-01-08 12:03:10 DEBUG liquibase.servicelocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.AddDefaultValueGeneratorOracle
+2025-01-08 12:03:10 DEBUG liquibase.servicelocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.AddDefaultValueGeneratorPostgres
+2025-01-08 12:03:10 DEBUG liquibase.servicelocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.AddDefaultValueGeneratorSQLite
+2025-01-08 12:03:10 DEBUG liquibase.servicelocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.AddDefaultValueGeneratorSybase
+2025-01-08 12:03:10 DEBUG liquibase.servicelocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.AddDefaultValueGeneratorSybaseASA
+2025-01-08 12:03:10 DEBUG liquibase.servicelocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.AddForeignKeyConstraintGenerator
+2025-01-08 12:03:10 DEBUG liquibase.servicelocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.AddPrimaryKeyGenerator
+2025-01-08 12:03:10 DEBUG liquibase.servicelocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.AddPrimaryKeyGeneratorInformix
+2025-01-08 12:03:10 DEBUG liquibase.servicelocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.AddUniqueConstraintGenerator
+2025-01-08 12:03:10 DEBUG liquibase.servicelocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.AddUniqueConstraintGeneratorInformix
+2025-01-08 12:03:10 DEBUG liquibase.servicelocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.AddUniqueConstraintGeneratorTDS
+2025-01-08 12:03:10 DEBUG liquibase.servicelocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.AlterSequenceGenerator
+2025-01-08 12:03:10 DEBUG liquibase.servicelocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.BatchDmlExecutablePreparedStatementGenerator
+2025-01-08 12:03:10 DEBUG liquibase.servicelocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.ClearDatabaseChangeLogTableGenerator
+2025-01-08 12:03:10 DEBUG liquibase.servicelocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.CommentGenerator
+2025-01-08 12:03:10 DEBUG liquibase.servicelocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.CopyRowsGenerator
+2025-01-08 12:03:10 DEBUG liquibase.servicelocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.CreateDatabaseChangeLogLockTableGenerator
+2025-01-08 12:03:10 DEBUG liquibase.servicelocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.CreateDatabaseChangeLogTableGenerator
+2025-01-08 12:03:10 DEBUG liquibase.servicelocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.CreateDatabaseChangeLogTableGeneratorSybase
+2025-01-08 12:03:10 DEBUG liquibase.servicelocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.CreateIndexGenerator
+2025-01-08 12:03:10 DEBUG liquibase.servicelocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.CreateIndexGeneratorFirebird
+2025-01-08 12:03:10 DEBUG liquibase.servicelocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.CreateIndexGeneratorPostgres
+2025-01-08 12:03:10 DEBUG liquibase.servicelocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.CreateProcedureGenerator
+2025-01-08 12:03:10 DEBUG liquibase.servicelocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.CreateSequenceGenerator
+2025-01-08 12:03:10 DEBUG liquibase.servicelocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.CreateTableGenerator
+2025-01-08 12:03:10 DEBUG liquibase.servicelocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.CreateTableGeneratorInformix
+2025-01-08 12:03:10 DEBUG liquibase.servicelocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.CreateViewGenerator
+2025-01-08 12:03:10 DEBUG liquibase.servicelocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.CreateViewGeneratorInformix
+2025-01-08 12:03:10 DEBUG liquibase.servicelocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.DeleteGenerator
+2025-01-08 12:03:10 DEBUG liquibase.servicelocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.DropColumnGenerator
+2025-01-08 12:03:10 DEBUG liquibase.servicelocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.DropDefaultValueGenerator
+2025-01-08 12:03:10 DEBUG liquibase.servicelocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.DropForeignKeyConstraintGenerator
+2025-01-08 12:03:10 DEBUG liquibase.servicelocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.DropIndexGenerator
+2025-01-08 12:03:10 DEBUG liquibase.servicelocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.DropPrimaryKeyGenerator
+2025-01-08 12:03:10 DEBUG liquibase.servicelocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.DropProcedureGenerator
+2025-01-08 12:03:10 DEBUG liquibase.servicelocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.DropSequenceGenerator
+2025-01-08 12:03:10 DEBUG liquibase.servicelocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.DropTableGenerator
+2025-01-08 12:03:10 DEBUG liquibase.servicelocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.DropUniqueConstraintGenerator
+2025-01-08 12:03:10 DEBUG liquibase.servicelocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.DropViewGenerator
+2025-01-08 12:03:10 DEBUG liquibase.servicelocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.GetNextChangeSetSequenceValueGenerator
+2025-01-08 12:03:10 DEBUG liquibase.servicelocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.GetViewDefinitionGenerator
+2025-01-08 12:03:10 DEBUG liquibase.servicelocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.GetViewDefinitionGeneratorDB2
+2025-01-08 12:03:10 DEBUG liquibase.servicelocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.GetViewDefinitionGeneratorDerby
+2025-01-08 12:03:10 DEBUG liquibase.servicelocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.GetViewDefinitionGeneratorFirebird
+2025-01-08 12:03:10 DEBUG liquibase.servicelocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.GetViewDefinitionGeneratorHsql
+2025-01-08 12:03:10 DEBUG liquibase.servicelocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.GetViewDefinitionGeneratorInformix
+2025-01-08 12:03:10 DEBUG liquibase.servicelocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.GetViewDefinitionGeneratorMSSQL
+2025-01-08 12:03:10 DEBUG liquibase.servicelocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.GetViewDefinitionGeneratorOracle
+2025-01-08 12:03:10 DEBUG liquibase.servicelocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.GetViewDefinitionGeneratorPostgres
+2025-01-08 12:03:10 DEBUG liquibase.servicelocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.GetViewDefinitionGeneratorSybase
+2025-01-08 12:03:10 DEBUG liquibase.servicelocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.GetViewDefinitionGeneratorSybaseASA
+2025-01-08 12:03:10 DEBUG liquibase.servicelocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.InitializeDatabaseChangeLogLockTableGenerator
+2025-01-08 12:03:10 DEBUG liquibase.servicelocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.InsertDataChangeGenerator
+2025-01-08 12:03:10 DEBUG liquibase.servicelocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.InsertGenerator
+2025-01-08 12:03:10 DEBUG liquibase.servicelocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.InsertOrUpdateGeneratorDB2
+2025-01-08 12:03:10 DEBUG liquibase.servicelocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.InsertOrUpdateGeneratorH2
+2025-01-08 12:03:10 DEBUG liquibase.servicelocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.InsertOrUpdateGeneratorHsql
+2025-01-08 12:03:10 DEBUG liquibase.servicelocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.InsertOrUpdateGeneratorInformix
+2025-01-08 12:03:10 DEBUG liquibase.servicelocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.InsertOrUpdateGeneratorMSSQL
+2025-01-08 12:03:10 DEBUG liquibase.servicelocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.InsertOrUpdateGeneratorMySQL
+2025-01-08 12:03:10 DEBUG liquibase.servicelocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.InsertOrUpdateGeneratorOracle
+2025-01-08 12:03:10 DEBUG liquibase.servicelocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.InsertOrUpdateGeneratorPostgres
+2025-01-08 12:03:10 DEBUG liquibase.servicelocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.InsertOrUpdateGeneratorSQLite
+2025-01-08 12:03:10 DEBUG liquibase.servicelocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.InsertOrUpdateGeneratorSybaseASA
+2025-01-08 12:03:10 DEBUG liquibase.servicelocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.InsertSetGenerator
+2025-01-08 12:03:10 DEBUG liquibase.servicelocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.LockDatabaseChangeLogGenerator
+2025-01-08 12:03:10 DEBUG liquibase.servicelocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.MarkChangeSetRanGenerator
+2025-01-08 12:03:10 DEBUG liquibase.servicelocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.ModifyDataTypeGenerator
+2025-01-08 12:03:10 DEBUG liquibase.servicelocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.RawParameterizedSqlGenerator
+2025-01-08 12:03:10 DEBUG liquibase.servicelocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.RawSqlGenerator
+2025-01-08 12:03:10 DEBUG liquibase.servicelocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.ReindexGeneratorSQLite
+2025-01-08 12:03:10 DEBUG liquibase.servicelocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.RemoveChangeSetRanStatusGenerator
+2025-01-08 12:03:10 DEBUG liquibase.servicelocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.RenameColumnGenerator
+2025-01-08 12:03:10 DEBUG liquibase.servicelocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.RenameSequenceGenerator
+2025-01-08 12:03:10 DEBUG liquibase.servicelocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.RenameTableGenerator
+2025-01-08 12:03:10 DEBUG liquibase.servicelocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.RenameViewGenerator
+2025-01-08 12:03:10 DEBUG liquibase.servicelocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.ReorganizeTableGeneratorDB2
+2025-01-08 12:03:10 DEBUG liquibase.servicelocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.RuntimeGenerator
+2025-01-08 12:03:10 DEBUG liquibase.servicelocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.SelectFromDatabaseChangeLogGenerator
+2025-01-08 12:03:10 DEBUG liquibase.servicelocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.SelectFromDatabaseChangeLogLockGenerator
+2025-01-08 12:03:10 DEBUG liquibase.servicelocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.SetColumnRemarksGenerator
+2025-01-08 12:03:10 DEBUG liquibase.servicelocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.SetNullableGenerator
+2025-01-08 12:03:10 DEBUG liquibase.servicelocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.SetTableRemarksGenerator
+2025-01-08 12:03:10 DEBUG liquibase.servicelocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.SetViewRemarksGenerator
+2025-01-08 12:03:10 DEBUG liquibase.servicelocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.StoredProcedureGenerator
+2025-01-08 12:03:10 DEBUG liquibase.servicelocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.TableRowCountGenerator
+2025-01-08 12:03:10 DEBUG liquibase.servicelocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.TagDatabaseGenerator
+2025-01-08 12:03:10 DEBUG liquibase.servicelocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.UnlockDatabaseChangeLogGenerator
+2025-01-08 12:03:10 DEBUG liquibase.servicelocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.UpdateChangeSetChecksumGenerator
+2025-01-08 12:03:10 DEBUG liquibase.servicelocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.UpdateDataChangeGenerator
+2025-01-08 12:03:10 DEBUG liquibase.servicelocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.UpdateGenerator
+2025-01-08 12:03:10 DEBUG liquibase.servicelocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.CreateSequenceGeneratorSnowflake
+2025-01-08 12:03:10 DEBUG liquibase.servicelocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.DropDefaultValueGeneratorSnowflake
+2025-01-08 12:03:10 DEBUG liquibase.servicelocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.DropProcedureGeneratorSnowflake
+2025-01-08 12:03:10 DEBUG liquibase.servicelocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.InsertOrUpdateGeneratorSnowflake
+2025-01-08 12:03:10 DEBUG liquibase.servicelocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.RenameTableGeneratorSnowflake
+2025-01-08 12:03:10 DEBUG liquibase.servicelocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.RenameViewGeneratorSnowflake
+2025-01-08 12:03:10 DEBUG liquibase.servicelocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.SetColumnRemarksGeneratorSnowflake
+2025-01-08 12:03:10 DEBUG liquibase.servicelocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.SetTableRemarksGeneratorSnowflake
+2025-01-08 12:03:10 INFO  liquibase.database - Set default schema name to public
+2025-01-08 12:03:10 DEBUG liquibase.configuration - No configuration value for liquibase.liquibaseSchemaName aka liquibase.schemaName found
+2025-01-08 12:03:10 DEBUG liquibase.configuration - No configuration value for liquibase.supportPropertyEscaping aka enableEscaping found
+2025-01-08 12:03:10 DEBUG liquibase.configuration - Configuration liquibase.supportPropertyEscaping is using the default value of false
+2025-01-08 12:03:10 INFO  liquibase - Clearing database change log checksums
+2025-01-08 12:03:10 DEBUG liquibase.servicelocator - Loaded liquibase.lockservice.LockService instance liquibase.lockservice.LockServiceImpl
+2025-01-08 12:03:10 DEBUG liquibase.servicelocator - Loaded liquibase.lockservice.LockService instance liquibase.lockservice.MockLockService
+2025-01-08 12:03:10 DEBUG liquibase.servicelocator - Loaded liquibase.lockservice.LockService instance liquibase.lockservice.OfflineLockService
+2025-01-08 12:03:10 DEBUG liquibase.servicelocator - Loaded liquibase.lockservice.LockService instance liquibase.lockservice.StandardLockService
+2025-01-08 12:03:10 DEBUG liquibase.configuration - No configuration value for liquibase.changelogLockWaitTimeInMinutes aka liquibase.changeLogLockWaitTimeInMinutes found
+2025-01-08 12:03:10 DEBUG liquibase.configuration - Configuration liquibase.changelogLockWaitTimeInMinutes is using the default value of 5
+2025-01-08 12:03:10 DEBUG liquibase.configuration - No configuration value for liquibase.preserveSchemaCase found
+2025-01-08 12:03:10 DEBUG liquibase.configuration - Configuration liquibase.preserveSchemaCase is using the default value of false
+2025-01-08 12:03:10 DEBUG liquibase.configuration - No configuration value for liquibase.sql.logLevel found
+2025-01-08 12:03:10 DEBUG liquibase.configuration - Configuration liquibase.sql.logLevel is using the default value of FINE
+2025-01-08 12:03:10 DEBUG liquibase.executor - SET SEARCH_PATH TO public, "public"
+2025-01-08 12:03:10 DEBUG liquibase.executor - 0 row(s) affected
+2025-01-08 12:03:10 DEBUG liquibase.servicelocator - Loaded liquibase.snapshot.SnapshotGenerator instance liquibase.snapshot.jvm.CatalogSnapshotGenerator
+2025-01-08 12:03:10 DEBUG liquibase.servicelocator - Loaded liquibase.snapshot.SnapshotGenerator instance liquibase.snapshot.jvm.ColumnSnapshotGenerator
+2025-01-08 12:03:10 DEBUG liquibase.servicelocator - Loaded liquibase.snapshot.SnapshotGenerator instance liquibase.snapshot.jvm.ColumnSnapshotGeneratorH2
+2025-01-08 12:03:10 DEBUG liquibase.servicelocator - Loaded liquibase.snapshot.SnapshotGenerator instance liquibase.snapshot.jvm.ColumnSnapshotGeneratorInformix
+2025-01-08 12:03:10 DEBUG liquibase.servicelocator - Loaded liquibase.snapshot.SnapshotGenerator instance liquibase.snapshot.jvm.ColumnSnapshotGeneratorOracle
+2025-01-08 12:03:10 DEBUG liquibase.servicelocator - Loaded liquibase.snapshot.SnapshotGenerator instance liquibase.snapshot.jvm.DataSnapshotGenerator
+2025-01-08 12:03:10 DEBUG liquibase.servicelocator - Loaded liquibase.snapshot.SnapshotGenerator instance liquibase.snapshot.jvm.ForeignKeySnapshotGenerator
+2025-01-08 12:03:10 DEBUG liquibase.servicelocator - Loaded liquibase.snapshot.SnapshotGenerator instance liquibase.snapshot.jvm.IndexSnapshotGenerator
+2025-01-08 12:03:10 DEBUG liquibase.servicelocator - Loaded liquibase.snapshot.SnapshotGenerator instance liquibase.snapshot.jvm.PrimaryKeySnapshotGenerator
+2025-01-08 12:03:10 DEBUG liquibase.servicelocator - Loaded liquibase.snapshot.SnapshotGenerator instance liquibase.snapshot.jvm.SchemaSnapshotGenerator
+2025-01-08 12:03:10 DEBUG liquibase.servicelocator - Loaded liquibase.snapshot.SnapshotGenerator instance liquibase.snapshot.jvm.SequenceSnapshotGenerator
+2025-01-08 12:03:10 DEBUG liquibase.servicelocator - Loaded liquibase.snapshot.SnapshotGenerator instance liquibase.snapshot.jvm.TableSnapshotGenerator
+2025-01-08 12:03:10 DEBUG liquibase.servicelocator - Loaded liquibase.snapshot.SnapshotGenerator instance liquibase.snapshot.jvm.UniqueConstraintSnapshotGenerator
+2025-01-08 12:03:10 DEBUG liquibase.servicelocator - Loaded liquibase.snapshot.SnapshotGenerator instance liquibase.snapshot.jvm.ViewSnapshotGenerator
+2025-01-08 12:03:10 DEBUG liquibase.servicelocator - Loaded liquibase.snapshot.SnapshotGenerator instance liquibase.snapshot.jvm.SchemaSnapshotGeneratorSnowflake
+2025-01-08 12:03:10 DEBUG liquibase.servicelocator - Loaded liquibase.snapshot.SnapshotGenerator instance liquibase.snapshot.jvm.SequenceSnapshotGeneratorSnowflake
+2025-01-08 12:03:10 DEBUG liquibase.servicelocator - Loaded liquibase.snapshot.SnapshotGenerator instance liquibase.snapshot.jvm.UniqueConstraintSnapshotGeneratorSnowflake
+2025-01-08 12:03:10 DEBUG liquibase.configuration - No configuration value for liquibase.liquibaseCatalogName aka liquibase.catalogName found
+2025-01-08 12:03:10 DEBUG liquibase.servicelocator - Loaded liquibase.logging.mdc.MdcManager instance liquibase.logging.mdc.NoOpMdcManager
+2025-01-08 12:03:10 INFO  liquibase.executor - Changelog query completed.
+2025-01-08 12:03:10 INFO  liquibase.executor - Changelog query completed.
+2025-01-08 12:03:10 DEBUG liquibase.executor - Lock Database
+2025-01-08 12:03:10 DEBUG liquibase.servicelocator - Loaded liquibase.datatype.LiquibaseDataType instance liquibase.datatype.core.BigIntType
+2025-01-08 12:03:10 DEBUG liquibase.servicelocator - Loaded liquibase.datatype.LiquibaseDataType instance liquibase.datatype.core.BlobType
+2025-01-08 12:03:10 DEBUG liquibase.servicelocator - Loaded liquibase.datatype.LiquibaseDataType instance liquibase.datatype.core.BooleanType
+2025-01-08 12:03:10 DEBUG liquibase.servicelocator - Loaded liquibase.datatype.LiquibaseDataType instance liquibase.datatype.core.CharType
+2025-01-08 12:03:10 DEBUG liquibase.servicelocator - Loaded liquibase.datatype.LiquibaseDataType instance liquibase.datatype.core.ClobType
+2025-01-08 12:03:10 DEBUG liquibase.servicelocator - Loaded liquibase.datatype.LiquibaseDataType instance liquibase.datatype.core.CurrencyType
+2025-01-08 12:03:10 DEBUG liquibase.servicelocator - Loaded liquibase.datatype.LiquibaseDataType instance liquibase.datatype.core.DatabaseFunctionType
+2025-01-08 12:03:10 DEBUG liquibase.servicelocator - Loaded liquibase.datatype.LiquibaseDataType instance liquibase.datatype.core.DateTimeType
+2025-01-08 12:03:10 DEBUG liquibase.servicelocator - Loaded liquibase.datatype.LiquibaseDataType instance liquibase.datatype.core.DateType
+2025-01-08 12:03:10 DEBUG liquibase.servicelocator - Loaded liquibase.datatype.LiquibaseDataType instance liquibase.datatype.core.DecimalType
+2025-01-08 12:03:10 DEBUG liquibase.servicelocator - Loaded liquibase.datatype.LiquibaseDataType instance liquibase.datatype.core.DoubleType
+2025-01-08 12:03:10 DEBUG liquibase.servicelocator - Loaded liquibase.datatype.LiquibaseDataType instance liquibase.datatype.core.FloatType
+2025-01-08 12:03:10 DEBUG liquibase.servicelocator - Loaded liquibase.datatype.LiquibaseDataType instance liquibase.datatype.core.IntType
+2025-01-08 12:03:10 DEBUG liquibase.servicelocator - Loaded liquibase.datatype.LiquibaseDataType instance liquibase.datatype.core.MediumIntType
+2025-01-08 12:03:10 DEBUG liquibase.servicelocator - Loaded liquibase.datatype.LiquibaseDataType instance liquibase.datatype.core.NCharType
+2025-01-08 12:03:10 DEBUG liquibase.servicelocator - Loaded liquibase.datatype.LiquibaseDataType instance liquibase.datatype.core.NVarcharType
+2025-01-08 12:03:10 DEBUG liquibase.servicelocator - Loaded liquibase.datatype.LiquibaseDataType instance liquibase.datatype.core.NumberType
+2025-01-08 12:03:10 DEBUG liquibase.servicelocator - Loaded liquibase.datatype.LiquibaseDataType instance liquibase.datatype.core.SmallIntType
+2025-01-08 12:03:10 DEBUG liquibase.servicelocator - Loaded liquibase.datatype.LiquibaseDataType instance liquibase.datatype.core.TimeType
+2025-01-08 12:03:10 DEBUG liquibase.servicelocator - Loaded liquibase.datatype.LiquibaseDataType instance liquibase.datatype.core.TimestampType
+2025-01-08 12:03:10 DEBUG liquibase.servicelocator - Loaded liquibase.datatype.LiquibaseDataType instance liquibase.datatype.core.TinyIntType
+2025-01-08 12:03:10 DEBUG liquibase.servicelocator - Loaded liquibase.datatype.LiquibaseDataType instance liquibase.datatype.core.UUIDType
+2025-01-08 12:03:10 DEBUG liquibase.servicelocator - Loaded liquibase.datatype.LiquibaseDataType instance liquibase.datatype.core.UnknownType
+2025-01-08 12:03:10 DEBUG liquibase.servicelocator - Loaded liquibase.datatype.LiquibaseDataType instance liquibase.datatype.core.VarcharType
+2025-01-08 12:03:10 DEBUG liquibase.servicelocator - Loaded liquibase.datatype.LiquibaseDataType instance liquibase.datatype.core.XMLType
+2025-01-08 12:03:10 DEBUG liquibase.servicelocator - Loaded liquibase.datatype.LiquibaseDataType instance liquibase.datatype.core.TextDataTypeSnowflake
+2025-01-08 12:03:10 DEBUG liquibase.servicelocator - Loaded liquibase.datatype.LiquibaseDataType instance liquibase.datatype.core.TimestampNTZTypeSnowflake
+2025-01-08 12:03:10 DEBUG liquibase.servicelocator - Loaded liquibase.datatype.LiquibaseDataType instance liquibase.datatype.core.DoubleDataTypeSnowflake
+2025-01-08 12:03:10 DEBUG liquibase.configuration - No configuration value for liquibase.includeCatalogInSpecification found
+2025-01-08 12:03:10 DEBUG liquibase.configuration - Configuration liquibase.includeCatalogInSpecification is using the default value of false
+2025-01-08 12:03:10 INFO  liquibase.executor - Changelog query completed.
+2025-01-08 12:03:10 INFO  liquibase.lockservice - Successfully acquired change log lock
+2025-01-08 12:03:10 DEBUG liquibase.servicelocator - Loaded liquibase.changelog.ChangeLogHistoryService instance liquibase.changelog.MockChangeLogHistoryService
+2025-01-08 12:03:10 DEBUG liquibase.servicelocator - Loaded liquibase.changelog.ChangeLogHistoryService instance liquibase.changelog.StandardChangeLogHistoryService
+2025-01-08 12:03:10 DEBUG liquibase.servicelocator - Loaded liquibase.changelog.ChangeLogHistoryService instance liquibase.changelog.MockChangeLogHistoryService
+2025-01-08 12:03:10 DEBUG liquibase.servicelocator - Loaded liquibase.changelog.ChangeLogHistoryService instance liquibase.changelog.StandardChangeLogHistoryService
+2025-01-08 12:03:10 DEBUG liquibase.configuration - No configuration value for liquibase.outputFileEncoding found
+2025-01-08 12:03:10 DEBUG liquibase.configuration - Configuration liquibase.outputFileEncoding is using the default value of UTF-8
+2025-01-08 12:03:10 DEBUG liquibase.util - Computed checksum for 1736334190356 as 19e1b158428330392a85dbbb8099c603
+2025-01-08 12:03:10 DEBUG liquibase.servicelocator - Loaded liquibase.diff.compare.DatabaseObjectComparator instance liquibase.diff.compare.core.CatalogComparator
+2025-01-08 12:03:10 DEBUG liquibase.servicelocator - Loaded liquibase.diff.compare.DatabaseObjectComparator instance liquibase.diff.compare.core.ColumnComparator
+2025-01-08 12:03:10 DEBUG liquibase.servicelocator - Loaded liquibase.diff.compare.DatabaseObjectComparator instance liquibase.diff.compare.core.DefaultDatabaseObjectComparator
+2025-01-08 12:03:10 DEBUG liquibase.servicelocator - Loaded liquibase.diff.compare.DatabaseObjectComparator instance liquibase.diff.compare.core.ForeignKeyComparator
+2025-01-08 12:03:10 DEBUG liquibase.servicelocator - Loaded liquibase.diff.compare.DatabaseObjectComparator instance liquibase.diff.compare.core.IndexComparator
+2025-01-08 12:03:10 DEBUG liquibase.servicelocator - Loaded liquibase.diff.compare.DatabaseObjectComparator instance liquibase.diff.compare.core.PrimaryKeyComparator
+2025-01-08 12:03:10 DEBUG liquibase.servicelocator - Loaded liquibase.diff.compare.DatabaseObjectComparator instance liquibase.diff.compare.core.SchemaComparator
+2025-01-08 12:03:10 DEBUG liquibase.servicelocator - Loaded liquibase.diff.compare.DatabaseObjectComparator instance liquibase.diff.compare.core.TableComparator
+2025-01-08 12:03:10 DEBUG liquibase.servicelocator - Loaded liquibase.diff.compare.DatabaseObjectComparator instance liquibase.diff.compare.core.UniqueConstraintComparator
+2025-01-08 12:03:10 INFO  liquibase.executor - Changelog query completed.
+2025-01-08 12:03:10 INFO  liquibase.executor - Changelog query completed.
+2025-01-08 12:03:10 DEBUG liquibase.executor - UPDATE public.databasechangelog SET MD5SUM = NULL
+2025-01-08 12:03:10 DEBUG liquibase.executor - 7 row(s) affected
+2025-01-08 12:03:10 INFO  liquibase.executor - Changelog query completed.
+2025-01-08 12:03:10 DEBUG liquibase.executor - Release Database Lock
+2025-01-08 12:03:10 INFO  liquibase.executor - Changelog query completed.
+2025-01-08 12:03:10 INFO  liquibase.lockservice - Successfully released change log lock
+2025-01-08 12:03:10 DEBUG liquibase.servicelocator - Loaded liquibase.parser.ChangeLogParser instance liquibase.parser.core.formattedsql.FormattedSqlChangeLogParser
+2025-01-08 12:03:10 DEBUG liquibase.servicelocator - Loaded liquibase.parser.ChangeLogParser instance liquibase.parser.core.json.JsonChangeLogParser
+2025-01-08 12:03:10 DEBUG liquibase.servicelocator - Loaded liquibase.parser.ChangeLogParser instance liquibase.parser.core.sql.SqlChangeLogParser
+2025-01-08 12:03:10 DEBUG liquibase.configuration - No configuration value for liquibase.validateXmlChangelogFiles found
+2025-01-08 12:03:10 DEBUG liquibase.configuration - Configuration liquibase.validateXmlChangelogFiles is using the default value of true
+2025-01-08 12:03:10 DEBUG liquibase.configuration - No configuration value for liquibase.secureParsing found
+2025-01-08 12:03:10 DEBUG liquibase.configuration - Configuration liquibase.secureParsing is using the default value of true
+2025-01-08 12:03:10 DEBUG liquibase.servicelocator - Loaded liquibase.parser.ChangeLogParser instance liquibase.parser.core.xml.XMLChangeLogSAXParser
+2025-01-08 12:03:10 DEBUG liquibase.servicelocator - Loaded liquibase.parser.ChangeLogParser instance liquibase.parser.core.yaml.YamlChangeLogParser
+2025-01-08 12:03:10 DEBUG liquibase.servicelocator - Loaded liquibase.change.Change instance liquibase.change.core.AddAutoIncrementChange
+2025-01-08 12:03:10 DEBUG liquibase.servicelocator - Loaded liquibase.change.Change instance liquibase.change.core.AddColumnChange
+2025-01-08 12:03:10 DEBUG liquibase.servicelocator - Loaded liquibase.change.Change instance liquibase.change.core.AddDefaultValueChange
+2025-01-08 12:03:10 DEBUG liquibase.servicelocator - Loaded liquibase.change.Change instance liquibase.change.core.AddForeignKeyConstraintChange
+2025-01-08 12:03:10 DEBUG liquibase.servicelocator - Loaded liquibase.change.Change instance liquibase.change.core.AddLookupTableChange
+2025-01-08 12:03:10 DEBUG liquibase.servicelocator - Loaded liquibase.change.Change instance liquibase.change.core.AddNotNullConstraintChange
+2025-01-08 12:03:10 DEBUG liquibase.servicelocator - Loaded liquibase.change.Change instance liquibase.change.core.AddPrimaryKeyChange
+2025-01-08 12:03:10 DEBUG liquibase.servicelocator - Loaded liquibase.change.Change instance liquibase.change.core.AddUniqueConstraintChange
+2025-01-08 12:03:10 DEBUG liquibase.servicelocator - Loaded liquibase.change.Change instance liquibase.change.core.AlterSequenceChange
+2025-01-08 12:03:10 DEBUG liquibase.servicelocator - Loaded liquibase.change.Change instance liquibase.change.core.CreateIndexChange
+2025-01-08 12:03:10 DEBUG liquibase.servicelocator - Loaded liquibase.change.Change instance liquibase.change.core.CreateProcedureChange
+2025-01-08 12:03:10 DEBUG liquibase.servicelocator - Loaded liquibase.change.Change instance liquibase.change.core.CreateSequenceChange
+2025-01-08 12:03:10 DEBUG liquibase.servicelocator - Loaded liquibase.change.Change instance liquibase.change.core.CreateTableChange
+2025-01-08 12:03:10 DEBUG liquibase.servicelocator - Loaded liquibase.change.Change instance liquibase.change.core.CreateViewChange
+2025-01-08 12:03:10 DEBUG liquibase.servicelocator - Loaded liquibase.change.Change instance liquibase.change.core.DeleteDataChange
+2025-01-08 12:03:10 DEBUG liquibase.servicelocator - Loaded liquibase.change.Change instance liquibase.change.core.DropAllForeignKeyConstraintsChange
+2025-01-08 12:03:10 DEBUG liquibase.servicelocator - Loaded liquibase.change.Change instance liquibase.change.core.DropColumnChange
+2025-01-08 12:03:10 DEBUG liquibase.servicelocator - Loaded liquibase.change.Change instance liquibase.change.core.DropDefaultValueChange
+2025-01-08 12:03:10 DEBUG liquibase.servicelocator - Loaded liquibase.change.Change instance liquibase.change.core.DropForeignKeyConstraintChange
+2025-01-08 12:03:10 DEBUG liquibase.servicelocator - Loaded liquibase.change.Change instance liquibase.change.core.DropIndexChange
+2025-01-08 12:03:10 DEBUG liquibase.servicelocator - Loaded liquibase.change.Change instance liquibase.change.core.DropNotNullConstraintChange
+2025-01-08 12:03:10 DEBUG liquibase.servicelocator - Loaded liquibase.change.Change instance liquibase.change.core.DropPrimaryKeyChange
+2025-01-08 12:03:10 DEBUG liquibase.servicelocator - Loaded liquibase.change.Change instance liquibase.change.core.DropProcedureChange
+2025-01-08 12:03:10 DEBUG liquibase.servicelocator - Loaded liquibase.change.Change instance liquibase.change.core.DropSequenceChange
+2025-01-08 12:03:10 DEBUG liquibase.servicelocator - Loaded liquibase.change.Change instance liquibase.change.core.DropTableChange
+2025-01-08 12:03:10 DEBUG liquibase.servicelocator - Loaded liquibase.change.Change instance liquibase.change.core.DropUniqueConstraintChange
+2025-01-08 12:03:10 DEBUG liquibase.servicelocator - Loaded liquibase.change.Change instance liquibase.change.core.DropViewChange
+2025-01-08 12:03:10 DEBUG liquibase.servicelocator - Loaded liquibase.change.Change instance liquibase.change.core.EmptyChange
+2025-01-08 12:03:10 DEBUG liquibase.servicelocator - Loaded liquibase.change.Change instance liquibase.change.core.ExecuteShellCommandChange
+2025-01-08 12:03:10 DEBUG liquibase.servicelocator - Loaded liquibase.change.Change instance liquibase.change.core.InsertDataChange
+2025-01-08 12:03:10 DEBUG liquibase.servicelocator - Loaded liquibase.change.Change instance liquibase.change.core.LoadDataChange
+2025-01-08 12:03:10 DEBUG liquibase.servicelocator - Loaded liquibase.change.Change instance liquibase.change.core.LoadUpdateDataChange
+2025-01-08 12:03:10 DEBUG liquibase.servicelocator - Loaded liquibase.change.Change instance liquibase.change.core.MergeColumnChange
+2025-01-08 12:03:10 DEBUG liquibase.servicelocator - Loaded liquibase.change.Change instance liquibase.change.core.ModifyDataTypeChange
+2025-01-08 12:03:10 DEBUG liquibase.servicelocator - Loaded liquibase.change.Change instance liquibase.change.core.OutputChange
+2025-01-08 12:03:10 DEBUG liquibase.servicelocator - Loaded liquibase.change.Change instance liquibase.change.core.RawSQLChange
+2025-01-08 12:03:10 DEBUG liquibase.servicelocator - Loaded liquibase.change.Change instance liquibase.change.core.RenameColumnChange
+2025-01-08 12:03:10 DEBUG liquibase.servicelocator - Loaded liquibase.change.Change instance liquibase.change.core.RenameSequenceChange
+2025-01-08 12:03:10 DEBUG liquibase.servicelocator - Loaded liquibase.change.Change instance liquibase.change.core.RenameTableChange
+2025-01-08 12:03:10 DEBUG liquibase.servicelocator - Loaded liquibase.change.Change instance liquibase.change.core.RenameViewChange
+2025-01-08 12:03:10 DEBUG liquibase.servicelocator - Loaded liquibase.change.Change instance liquibase.change.core.SQLFileChange
+2025-01-08 12:03:10 DEBUG liquibase.servicelocator - Loaded liquibase.change.Change instance liquibase.change.core.SetColumnRemarksChange
+2025-01-08 12:03:10 DEBUG liquibase.servicelocator - Loaded liquibase.change.Change instance liquibase.change.core.SetTableRemarksChange
+2025-01-08 12:03:10 DEBUG liquibase.servicelocator - Loaded liquibase.change.Change instance liquibase.change.core.StopChange
+2025-01-08 12:03:10 DEBUG liquibase.servicelocator - Loaded liquibase.change.Change instance liquibase.change.core.TagDatabaseChange
+2025-01-08 12:03:10 DEBUG liquibase.servicelocator - Loaded liquibase.change.Change instance liquibase.change.core.UpdateDataChange
+2025-01-08 12:03:10 DEBUG liquibase.servicelocator - Loaded liquibase.change.Change instance liquibase.change.custom.CustomChangeWrapper
+2025-01-08 12:03:10 DEBUG liquibase.servicelocator - Loaded liquibase.changelog.ChangeLogHistoryService instance liquibase.changelog.MockChangeLogHistoryService
+2025-01-08 12:03:10 DEBUG liquibase.servicelocator - Loaded liquibase.changelog.ChangeLogHistoryService instance liquibase.changelog.StandardChangeLogHistoryService
+2025-01-08 12:03:10 INFO  liquibase.changelog - Reading from public.databasechangelog
+2025-01-08 12:03:10 INFO  liquibase.executor - Changelog query completed.
+2025-01-08 12:03:10 DEBUG liquibase.util - Computed checksum for createTable:[
+    columns=[
+        [
+            [
+                primaryKey="true"
+            ]
+            autoIncrement="true"
+            name="id"
+            type="BIGINT"
+        ],
+        [
+            [
+                nullable="false"
+            ]
+            name="name"
+            type="VARCHAR(255)"
+        ],
+        [
+            [
+                nullable="false"
+            ]
+            name="mongodb_uri"
+            type="VARCHAR(255)"
+        ],
+        [
+            [
+ ... [truncated in log] as 1c8861c24023bde852709f2971278274
+2025-01-08 12:03:10 DEBUG liquibase.util - Computed checksum for 8:1c8861c24023bde852709f2971278274: as f281677faea531d4ec2354e206cc5e40
+2025-01-08 12:03:10 DEBUG liquibase.util - Computed checksum for createTable:[
+    columns=[
+        [
+            [
+                primaryKey="true"
+            ]
+            autoIncrement="true"
+            name="id"
+            type="BIGINT"
+        ],
+        [
+            [
+                nullable="false"
+            ]
+            name="tenant_id"
+            type="BIGINT"
+        ],
+        [
+            [
+                nullable="false"
+            ]
+            name="username"
+            type="VARCHAR(255)"
+        ],
+        [
+            [
+     ... [truncated in log] as 36fb93e45dbbc6670e08bc8d780526b9
+2025-01-08 12:03:10 DEBUG liquibase.util - Computed checksum for 8:36fb93e45dbbc6670e08bc8d780526b9: as 280bd341eca9b8562a0d079fee1f1d6f
+2025-01-08 12:03:10 DEBUG liquibase.util - Computed checksum for addForeignKeyConstraint:[
+    baseColumnNames="tenant_id"
+    baseTableName="users"
+    constraintName="fk_users_tenant"
+    referencedColumnNames="id"
+    referencedTableName="tenants"
+] as 20a8934e53154c78190282720d163f68
+2025-01-08 12:03:10 DEBUG liquibase.util - Computed checksum for 8:20a8934e53154c78190282720d163f68: as 246324e848a2fff2dd54ee8bd19ef8a9
+2025-01-08 12:03:10 DEBUG liquibase.util - Computed checksum for createTable:[
+    columns=[
+        [
+            [
+                primaryKey="true"
+            ]
+            autoIncrement="true"
+            name="id"
+            type="BIGINT"
+        ],
+        [
+            [
+                nullable="false"
+            ]
+            name="tenant_id"
+            type="BIGINT"
+        ],
+        [
+            [
+                nullable="false"
+            ]
+            name="name"
+            type="VARCHAR(255)"
+        ],
+        [
+            [
+         ... [truncated in log] as 963e7f6f16c16ddf2abe6e6b1348ab81
+2025-01-08 12:03:10 DEBUG liquibase.util - Computed checksum for 8:963e7f6f16c16ddf2abe6e6b1348ab81: as 89b0f521bfcd66af52478403be47e828
+2025-01-08 12:03:10 DEBUG liquibase.util - Computed checksum for addForeignKeyConstraint:[
+    baseColumnNames="tenant_id"
+    baseTableName="projects"
+    constraintName="fk_projects_tenant"
+    referencedColumnNames="id"
+    referencedTableName="tenants"
+] as d80d53a32ceca3c6729097d858cc9253
+2025-01-08 12:03:10 DEBUG liquibase.util - Computed checksum for 8:d80d53a32ceca3c6729097d858cc9253: as 7ecd1227d3a94b75a26d26242bd0f83e
+2025-01-08 12:03:10 DEBUG liquibase.util - Computed checksum for createTable:[
+    columns=[
+        [
+            [
+                primaryKey="true"
+            ]
+            autoIncrement="true"
+            name="id"
+            type="BIGINT"
+        ],
+        [
+            [
+                nullable="false"
+            ]
+            name="project_id"
+            type="BIGINT"
+        ],
+        [
+            [
+                nullable="false"
+            ]
+            name="user_id"
+            type="BIGINT"
+        ],
+        [
+            [
+           ... [truncated in log] as d0accf892b30569b13b384f153e0c229
+2025-01-08 12:03:10 DEBUG liquibase.util - Computed checksum for 8:d0accf892b30569b13b384f153e0c229: as c7deb54a49942669d0b2ad4a051a45df
+2025-01-08 12:03:10 DEBUG liquibase.util - Computed checksum for addForeignKeyConstraint:[
+    baseColumnNames="project_id"
+    baseTableName="project_users"
+    constraintName="fk_project_users_project"
+    referencedColumnNames="id"
+    referencedTableName="projects"
+] as bfaaad8374554e3b9229db5b94b2ab0e
+2025-01-08 12:03:10 DEBUG liquibase.util - Computed checksum for addForeignKeyConstraint:[
+    baseColumnNames="user_id"
+    baseTableName="project_users"
+    constraintName="fk_project_users_user"
+    referencedColumnNames="id"
+    referencedTableName="users"
+] as ee923c0b098d7009f2287db7ffc4f6c6
+2025-01-08 12:03:10 DEBUG liquibase.util - Computed checksum for 8:bfaaad8374554e3b9229db5b94b2ab0e:8:ee923c0b098d7009f2287db7ffc4f6c6: as 6a95714e29ee504f7880781bc85c3995
+2025-01-08 12:03:10 DEBUG liquibase - Fast check found no un-run changesets
+2025-01-08 12:03:10 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-01-08 12:03:10 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.4.Final
+2025-01-08 12:03:10 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-01-08 12:03:10 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-01-08 12:03:10 INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'org.postgresql.ds.PGSimpleDataSource@1a4966ab']
+	Database driver: undefined/unknown
+	Database version: 17.2
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-01-08 12:03:11 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-01-08 12:03:11 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-01-08 12:03:11 INFO  org.mongodb.driver.client - MongoClient with metadata {"driver": {"name": "mongo-java-driver|sync", "version": "5.2.1"}, "os": {"type": "Darwin", "name": "Mac OS X", "architecture": "aarch64", "version": "15.2"}, "platform": "Java/Oracle Corporation/17.0.8+9-LTS-211"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=null, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=null, transportSettings=null, commandListeners=[], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, CollectionCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.client.model.mql.ExpressionCodecProvider@43d82758, com.mongodb.Jep395RecordCodecProvider@555a0c9e, com.mongodb.KotlinCodecProvider@5ceec7a8]}, loggerSettings=LoggerSettings{maxDocumentLength=1000}, clusterSettings={hosts=[localhost:27017], srvServiceName=mongodb, mode=SINGLE, requiredClusterType=UNKNOWN, requiredReplicaSetName='null', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='15 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverMonitoringMode=AUTO, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=false, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=UNSPECIFIED, serverApi=null, autoEncryptionSettings=null, dnsClient=null, inetAddressResolver=null, contextProvider=null, timeoutMS=null}
+2025-01-08 12:03:11 INFO  c.s.SCM_SaaS.config.MongoConfig - Connected to MongoDB database: scm_saas
+2025-01-08 12:03:11 INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, cryptd=false, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=25, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=16012917, minRoundTripTimeNanos=0}
+2025-01-08 12:03:12 INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 19 endpoints beneath base path '/actuator'
+2025-01-08 12:03:12 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-01-08 12:03:12 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-01-08 12:03:12 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-01-08 12:03:12 INFO  c.s.SCM_SaaS.ScmSaaSApplication - Started ScmSaaSApplication in 11.503 seconds (process running for 12.283)
+2025-01-08 12:03:13 INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2025-01-08 12:03:13 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-01-08 12:03:13 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-01-08 12:03:13 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2025-01-08 12:03:13 INFO  o.s.a.r.c.CachingConnectionFactory - Created new connection: rabbitConnectionFactory#31335ce2:0/SimpleConnection@63eb8ea2 [delegate=amqp://guest@127.0.0.1:5672/, localPort=59468]
+2025-01-08 12:03:23 ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Handler dispatch failed: java.lang.StackOverflowError] with root cause
+java.lang.StackOverflowError: null
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider.serializeValue(DefaultSerializerProvider.java:330)
+	at com.fasterxml.jackson.databind.ObjectMapper.writeValue(ObjectMapper.java:3365)
+	at com.fasterxml.jackson.core.base.GeneratorBase.writeObject(GeneratorBase.java:422)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.writeDynamicEntity(DynamicEntitySerializer.java:32)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.serialize(DynamicEntitySerializer.java:19)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider._serialize(DefaultSerializerProvider.java:502)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider.serializeValue(DefaultSerializerProvider.java:341)
+	at com.fasterxml.jackson.databind.ObjectMapper.writeValue(ObjectMapper.java:3365)
+	at com.fasterxml.jackson.core.base.GeneratorBase.writeObject(GeneratorBase.java:422)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.writeDynamicEntity(DynamicEntitySerializer.java:32)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.serialize(DynamicEntitySerializer.java:19)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider._serialize(DefaultSerializerProvider.java:502)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider.serializeValue(DefaultSerializerProvider.java:341)
+	at com.fasterxml.jackson.databind.ObjectMapper.writeValue(ObjectMapper.java:3365)
+	at com.fasterxml.jackson.core.base.GeneratorBase.writeObject(GeneratorBase.java:422)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.writeDynamicEntity(DynamicEntitySerializer.java:32)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.serialize(DynamicEntitySerializer.java:19)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider._serialize(DefaultSerializerProvider.java:502)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider.serializeValue(DefaultSerializerProvider.java:341)
+	at com.fasterxml.jackson.databind.ObjectMapper.writeValue(ObjectMapper.java:3365)
+	at com.fasterxml.jackson.core.base.GeneratorBase.writeObject(GeneratorBase.java:422)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.writeDynamicEntity(DynamicEntitySerializer.java:32)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.serialize(DynamicEntitySerializer.java:19)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider._serialize(DefaultSerializerProvider.java:502)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider.serializeValue(DefaultSerializerProvider.java:341)
+	at com.fasterxml.jackson.databind.ObjectMapper.writeValue(ObjectMapper.java:3365)
+	at com.fasterxml.jackson.core.base.GeneratorBase.writeObject(GeneratorBase.java:422)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.writeDynamicEntity(DynamicEntitySerializer.java:32)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.serialize(DynamicEntitySerializer.java:19)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider._serialize(DefaultSerializerProvider.java:502)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider.serializeValue(DefaultSerializerProvider.java:341)
+	at com.fasterxml.jackson.databind.ObjectMapper.writeValue(ObjectMapper.java:3365)
+	at com.fasterxml.jackson.core.base.GeneratorBase.writeObject(GeneratorBase.java:422)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.writeDynamicEntity(DynamicEntitySerializer.java:32)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.serialize(DynamicEntitySerializer.java:19)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider._serialize(DefaultSerializerProvider.java:502)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider.serializeValue(DefaultSerializerProvider.java:341)
+	at com.fasterxml.jackson.databind.ObjectMapper.writeValue(ObjectMapper.java:3365)
+	at com.fasterxml.jackson.core.base.GeneratorBase.writeObject(GeneratorBase.java:422)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.writeDynamicEntity(DynamicEntitySerializer.java:32)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.serialize(DynamicEntitySerializer.java:19)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider._serialize(DefaultSerializerProvider.java:502)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider.serializeValue(DefaultSerializerProvider.java:341)
+	at com.fasterxml.jackson.databind.ObjectMapper.writeValue(ObjectMapper.java:3365)
+	at com.fasterxml.jackson.core.base.GeneratorBase.writeObject(GeneratorBase.java:422)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.writeDynamicEntity(DynamicEntitySerializer.java:32)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.serialize(DynamicEntitySerializer.java:19)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider._serialize(DefaultSerializerProvider.java:502)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider.serializeValue(DefaultSerializerProvider.java:341)
+	at com.fasterxml.jackson.databind.ObjectMapper.writeValue(ObjectMapper.java:3365)
+	at com.fasterxml.jackson.core.base.GeneratorBase.writeObject(GeneratorBase.java:422)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.writeDynamicEntity(DynamicEntitySerializer.java:32)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.serialize(DynamicEntitySerializer.java:19)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider._serialize(DefaultSerializerProvider.java:502)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider.serializeValue(DefaultSerializerProvider.java:341)
+	at com.fasterxml.jackson.databind.ObjectMapper.writeValue(ObjectMapper.java:3365)
+	at com.fasterxml.jackson.core.base.GeneratorBase.writeObject(GeneratorBase.java:422)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.writeDynamicEntity(DynamicEntitySerializer.java:32)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.serialize(DynamicEntitySerializer.java:19)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider._serialize(DefaultSerializerProvider.java:502)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider.serializeValue(DefaultSerializerProvider.java:341)
+	at com.fasterxml.jackson.databind.ObjectMapper.writeValue(ObjectMapper.java:3365)
+	at com.fasterxml.jackson.core.base.GeneratorBase.writeObject(GeneratorBase.java:422)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.writeDynamicEntity(DynamicEntitySerializer.java:32)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.serialize(DynamicEntitySerializer.java:19)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider._serialize(DefaultSerializerProvider.java:502)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider.serializeValue(DefaultSerializerProvider.java:341)
+	at com.fasterxml.jackson.databind.ObjectMapper.writeValue(ObjectMapper.java:3365)
+	at com.fasterxml.jackson.core.base.GeneratorBase.writeObject(GeneratorBase.java:422)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.writeDynamicEntity(DynamicEntitySerializer.java:32)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.serialize(DynamicEntitySerializer.java:19)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider._serialize(DefaultSerializerProvider.java:502)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider.serializeValue(DefaultSerializerProvider.java:341)
+	at com.fasterxml.jackson.databind.ObjectMapper.writeValue(ObjectMapper.java:3365)
+	at com.fasterxml.jackson.core.base.GeneratorBase.writeObject(GeneratorBase.java:422)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.writeDynamicEntity(DynamicEntitySerializer.java:32)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.serialize(DynamicEntitySerializer.java:19)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider._serialize(DefaultSerializerProvider.java:502)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider.serializeValue(DefaultSerializerProvider.java:341)
+	at com.fasterxml.jackson.databind.ObjectMapper.writeValue(ObjectMapper.java:3365)
+	at com.fasterxml.jackson.core.base.GeneratorBase.writeObject(GeneratorBase.java:422)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.writeDynamicEntity(DynamicEntitySerializer.java:32)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.serialize(DynamicEntitySerializer.java:19)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider._serialize(DefaultSerializerProvider.java:502)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider.serializeValue(DefaultSerializerProvider.java:341)
+	at com.fasterxml.jackson.databind.ObjectMapper.writeValue(ObjectMapper.java:3365)
+	at com.fasterxml.jackson.core.base.GeneratorBase.writeObject(GeneratorBase.java:422)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.writeDynamicEntity(DynamicEntitySerializer.java:32)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.serialize(DynamicEntitySerializer.java:19)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider._serialize(DefaultSerializerProvider.java:502)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider.serializeValue(DefaultSerializerProvider.java:341)
+	at com.fasterxml.jackson.databind.ObjectMapper.writeValue(ObjectMapper.java:3365)
+	at com.fasterxml.jackson.core.base.GeneratorBase.writeObject(GeneratorBase.java:422)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.writeDynamicEntity(DynamicEntitySerializer.java:32)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.serialize(DynamicEntitySerializer.java:19)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider._serialize(DefaultSerializerProvider.java:502)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider.serializeValue(DefaultSerializerProvider.java:341)
+	at com.fasterxml.jackson.databind.ObjectMapper.writeValue(ObjectMapper.java:3365)
+	at com.fasterxml.jackson.core.base.GeneratorBase.writeObject(GeneratorBase.java:422)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.writeDynamicEntity(DynamicEntitySerializer.java:32)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.serialize(DynamicEntitySerializer.java:19)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider._serialize(DefaultSerializerProvider.java:502)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider.serializeValue(DefaultSerializerProvider.java:341)
+	at com.fasterxml.jackson.databind.ObjectMapper.writeValue(ObjectMapper.java:3365)
+	at com.fasterxml.jackson.core.base.GeneratorBase.writeObject(GeneratorBase.java:422)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.writeDynamicEntity(DynamicEntitySerializer.java:32)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.serialize(DynamicEntitySerializer.java:19)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider._serialize(DefaultSerializerProvider.java:502)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider.serializeValue(DefaultSerializerProvider.java:341)
+	at com.fasterxml.jackson.databind.ObjectMapper.writeValue(ObjectMapper.java:3365)
+	at com.fasterxml.jackson.core.base.GeneratorBase.writeObject(GeneratorBase.java:422)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.writeDynamicEntity(DynamicEntitySerializer.java:32)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.serialize(DynamicEntitySerializer.java:19)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider._serialize(DefaultSerializerProvider.java:502)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider.serializeValue(DefaultSerializerProvider.java:341)
+	at com.fasterxml.jackson.databind.ObjectMapper.writeValue(ObjectMapper.java:3365)
+	at com.fasterxml.jackson.core.base.GeneratorBase.writeObject(GeneratorBase.java:422)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.writeDynamicEntity(DynamicEntitySerializer.java:32)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.serialize(DynamicEntitySerializer.java:19)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider._serialize(DefaultSerializerProvider.java:502)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider.serializeValue(DefaultSerializerProvider.java:341)
+	at com.fasterxml.jackson.databind.ObjectMapper.writeValue(ObjectMapper.java:3365)
+	at com.fasterxml.jackson.core.base.GeneratorBase.writeObject(GeneratorBase.java:422)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.writeDynamicEntity(DynamicEntitySerializer.java:32)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.serialize(DynamicEntitySerializer.java:19)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider._serialize(DefaultSerializerProvider.java:502)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider.serializeValue(DefaultSerializerProvider.java:341)
+	at com.fasterxml.jackson.databind.ObjectMapper.writeValue(ObjectMapper.java:3365)
+	at com.fasterxml.jackson.core.base.GeneratorBase.writeObject(GeneratorBase.java:422)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.writeDynamicEntity(DynamicEntitySerializer.java:32)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.serialize(DynamicEntitySerializer.java:19)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider._serialize(DefaultSerializerProvider.java:502)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider.serializeValue(DefaultSerializerProvider.java:341)
+	at com.fasterxml.jackson.databind.ObjectMapper.writeValue(ObjectMapper.java:3365)
+	at com.fasterxml.jackson.core.base.GeneratorBase.writeObject(GeneratorBase.java:422)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.writeDynamicEntity(DynamicEntitySerializer.java:32)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.serialize(DynamicEntitySerializer.java:19)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider._serialize(DefaultSerializerProvider.java:502)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider.serializeValue(DefaultSerializerProvider.java:341)
+	at com.fasterxml.jackson.databind.ObjectMapper.writeValue(ObjectMapper.java:3365)
+	at com.fasterxml.jackson.core.base.GeneratorBase.writeObject(GeneratorBase.java:422)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.writeDynamicEntity(DynamicEntitySerializer.java:32)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.serialize(DynamicEntitySerializer.java:19)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider._serialize(DefaultSerializerProvider.java:502)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider.serializeValue(DefaultSerializerProvider.java:341)
+	at com.fasterxml.jackson.databind.ObjectMapper.writeValue(ObjectMapper.java:3365)
+	at com.fasterxml.jackson.core.base.GeneratorBase.writeObject(GeneratorBase.java:422)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.writeDynamicEntity(DynamicEntitySerializer.java:32)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.serialize(DynamicEntitySerializer.java:19)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider._serialize(DefaultSerializerProvider.java:502)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider.serializeValue(DefaultSerializerProvider.java:341)
+	at com.fasterxml.jackson.databind.ObjectMapper.writeValue(ObjectMapper.java:3365)
+	at com.fasterxml.jackson.core.base.GeneratorBase.writeObject(GeneratorBase.java:422)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.writeDynamicEntity(DynamicEntitySerializer.java:32)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.serialize(DynamicEntitySerializer.java:19)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider._serialize(DefaultSerializerProvider.java:502)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider.serializeValue(DefaultSerializerProvider.java:341)
+	at com.fasterxml.jackson.databind.ObjectMapper.writeValue(ObjectMapper.java:3365)
+	at com.fasterxml.jackson.core.base.GeneratorBase.writeObject(GeneratorBase.java:422)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.writeDynamicEntity(DynamicEntitySerializer.java:32)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.serialize(DynamicEntitySerializer.java:19)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider._serialize(DefaultSerializerProvider.java:502)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider.serializeValue(DefaultSerializerProvider.java:341)
+	at com.fasterxml.jackson.databind.ObjectMapper.writeValue(ObjectMapper.java:3365)
+	at com.fasterxml.jackson.core.base.GeneratorBase.writeObject(GeneratorBase.java:422)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.writeDynamicEntity(DynamicEntitySerializer.java:32)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.serialize(DynamicEntitySerializer.java:19)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider._serialize(DefaultSerializerProvider.java:502)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider.serializeValue(DefaultSerializerProvider.java:341)
+	at com.fasterxml.jackson.databind.ObjectMapper.writeValue(ObjectMapper.java:3365)
+	at com.fasterxml.jackson.core.base.GeneratorBase.writeObject(GeneratorBase.java:422)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.writeDynamicEntity(DynamicEntitySerializer.java:32)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.serialize(DynamicEntitySerializer.java:19)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider._serialize(DefaultSerializerProvider.java:502)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider.serializeValue(DefaultSerializerProvider.java:341)
+	at com.fasterxml.jackson.databind.ObjectMapper.writeValue(ObjectMapper.java:3365)
+	at com.fasterxml.jackson.core.base.GeneratorBase.writeObject(GeneratorBase.java:422)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.writeDynamicEntity(DynamicEntitySerializer.java:32)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.serialize(DynamicEntitySerializer.java:19)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider._serialize(DefaultSerializerProvider.java:502)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider.serializeValue(DefaultSerializerProvider.java:341)
+	at com.fasterxml.jackson.databind.ObjectMapper.writeValue(ObjectMapper.java:3365)
+	at com.fasterxml.jackson.core.base.GeneratorBase.writeObject(GeneratorBase.java:422)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.writeDynamicEntity(DynamicEntitySerializer.java:32)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.serialize(DynamicEntitySerializer.java:19)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider._serialize(DefaultSerializerProvider.java:502)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider.serializeValue(DefaultSerializerProvider.java:341)
+	at com.fasterxml.jackson.databind.ObjectMapper.writeValue(ObjectMapper.java:3365)
+	at com.fasterxml.jackson.core.base.GeneratorBase.writeObject(GeneratorBase.java:422)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.writeDynamicEntity(DynamicEntitySerializer.java:32)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.serialize(DynamicEntitySerializer.java:19)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider._serialize(DefaultSerializerProvider.java:502)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider.serializeValue(DefaultSerializerProvider.java:341)
+	at com.fasterxml.jackson.databind.ObjectMapper.writeValue(ObjectMapper.java:3365)
+	at com.fasterxml.jackson.core.base.GeneratorBase.writeObject(GeneratorBase.java:422)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.writeDynamicEntity(DynamicEntitySerializer.java:32)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.serialize(DynamicEntitySerializer.java:19)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider._serialize(DefaultSerializerProvider.java:502)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider.serializeValue(DefaultSerializerProvider.java:341)
+	at com.fasterxml.jackson.databind.ObjectMapper.writeValue(ObjectMapper.java:3365)
+	at com.fasterxml.jackson.core.base.GeneratorBase.writeObject(GeneratorBase.java:422)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.writeDynamicEntity(DynamicEntitySerializer.java:32)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.serialize(DynamicEntitySerializer.java:19)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider._serialize(DefaultSerializerProvider.java:502)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider.serializeValue(DefaultSerializerProvider.java:341)
+	at com.fasterxml.jackson.databind.ObjectMapper.writeValue(ObjectMapper.java:3365)
+	at com.fasterxml.jackson.core.base.GeneratorBase.writeObject(GeneratorBase.java:422)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.writeDynamicEntity(DynamicEntitySerializer.java:32)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.serialize(DynamicEntitySerializer.java:19)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider._serialize(DefaultSerializerProvider.java:502)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider.serializeValue(DefaultSerializerProvider.java:341)
+	at com.fasterxml.jackson.databind.ObjectMapper.writeValue(ObjectMapper.java:3365)
+	at com.fasterxml.jackson.core.base.GeneratorBase.writeObject(GeneratorBase.java:422)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.writeDynamicEntity(DynamicEntitySerializer.java:32)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.serialize(DynamicEntitySerializer.java:19)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider._serialize(DefaultSerializerProvider.java:502)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider.serializeValue(DefaultSerializerProvider.java:341)
+	at com.fasterxml.jackson.databind.ObjectMapper.writeValue(ObjectMapper.java:3365)
+	at com.fasterxml.jackson.core.base.GeneratorBase.writeObject(GeneratorBase.java:422)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.writeDynamicEntity(DynamicEntitySerializer.java:32)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.serialize(DynamicEntitySerializer.java:19)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider._serialize(DefaultSerializerProvider.java:502)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider.serializeValue(DefaultSerializerProvider.java:341)
+	at com.fasterxml.jackson.databind.ObjectMapper.writeValue(ObjectMapper.java:3365)
+	at com.fasterxml.jackson.core.base.GeneratorBase.writeObject(GeneratorBase.java:422)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.writeDynamicEntity(DynamicEntitySerializer.java:32)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.serialize(DynamicEntitySerializer.java:19)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider._serialize(DefaultSerializerProvider.java:502)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider.serializeValue(DefaultSerializerProvider.java:341)
+	at com.fasterxml.jackson.databind.ObjectMapper.writeValue(ObjectMapper.java:3365)
+	at com.fasterxml.jackson.core.base.GeneratorBase.writeObject(GeneratorBase.java:422)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.writeDynamicEntity(DynamicEntitySerializer.java:32)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.serialize(DynamicEntitySerializer.java:19)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider._serialize(DefaultSerializerProvider.java:502)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider.serializeValue(DefaultSerializerProvider.java:341)
+	at com.fasterxml.jackson.databind.ObjectMapper.writeValue(ObjectMapper.java:3365)
+	at com.fasterxml.jackson.core.base.GeneratorBase.writeObject(GeneratorBase.java:422)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.writeDynamicEntity(DynamicEntitySerializer.java:32)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.serialize(DynamicEntitySerializer.java:19)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider._serialize(DefaultSerializerProvider.java:502)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider.serializeValue(DefaultSerializerProvider.java:341)
+	at com.fasterxml.jackson.databind.ObjectMapper.writeValue(ObjectMapper.java:3365)
+	at com.fasterxml.jackson.core.base.GeneratorBase.writeObject(GeneratorBase.java:422)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.writeDynamicEntity(DynamicEntitySerializer.java:32)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.serialize(DynamicEntitySerializer.java:19)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider._serialize(DefaultSerializerProvider.java:502)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider.serializeValue(DefaultSerializerProvider.java:341)
+	at com.fasterxml.jackson.databind.ObjectMapper.writeValue(ObjectMapper.java:3365)
+	at com.fasterxml.jackson.core.base.GeneratorBase.writeObject(GeneratorBase.java:422)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.writeDynamicEntity(DynamicEntitySerializer.java:32)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.serialize(DynamicEntitySerializer.java:19)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider._serialize(DefaultSerializerProvider.java:502)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider.serializeValue(DefaultSerializerProvider.java:341)
+	at com.fasterxml.jackson.databind.ObjectMapper.writeValue(ObjectMapper.java:3365)
+	at com.fasterxml.jackson.core.base.GeneratorBase.writeObject(GeneratorBase.java:422)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.writeDynamicEntity(DynamicEntitySerializer.java:32)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.serialize(DynamicEntitySerializer.java:19)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider._serialize(DefaultSerializerProvider.java:502)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider.serializeValue(DefaultSerializerProvider.java:341)
+	at com.fasterxml.jackson.databind.ObjectMapper.writeValue(ObjectMapper.java:3365)
+	at com.fasterxml.jackson.core.base.GeneratorBase.writeObject(GeneratorBase.java:422)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.writeDynamicEntity(DynamicEntitySerializer.java:32)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.serialize(DynamicEntitySerializer.java:19)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider._serialize(DefaultSerializerProvider.java:502)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider.serializeValue(DefaultSerializerProvider.java:341)
+	at com.fasterxml.jackson.databind.ObjectMapper.writeValue(ObjectMapper.java:3365)
+	at com.fasterxml.jackson.core.base.GeneratorBase.writeObject(GeneratorBase.java:422)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.writeDynamicEntity(DynamicEntitySerializer.java:32)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.serialize(DynamicEntitySerializer.java:19)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider._serialize(DefaultSerializerProvider.java:502)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider.serializeValue(DefaultSerializerProvider.java:341)
+	at com.fasterxml.jackson.databind.ObjectMapper.writeValue(ObjectMapper.java:3365)
+	at com.fasterxml.jackson.core.base.GeneratorBase.writeObject(GeneratorBase.java:422)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.writeDynamicEntity(DynamicEntitySerializer.java:32)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.serialize(DynamicEntitySerializer.java:19)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider._serialize(DefaultSerializerProvider.java:502)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider.serializeValue(DefaultSerializerProvider.java:341)
+	at com.fasterxml.jackson.databind.ObjectMapper.writeValue(ObjectMapper.java:3365)
+	at com.fasterxml.jackson.core.base.GeneratorBase.writeObject(GeneratorBase.java:422)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.writeDynamicEntity(DynamicEntitySerializer.java:32)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.serialize(DynamicEntitySerializer.java:19)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider._serialize(DefaultSerializerProvider.java:502)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider.serializeValue(DefaultSerializerProvider.java:341)
+	at com.fasterxml.jackson.databind.ObjectMapper.writeValue(ObjectMapper.java:3365)
+	at com.fasterxml.jackson.core.base.GeneratorBase.writeObject(GeneratorBase.java:422)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.writeDynamicEntity(DynamicEntitySerializer.java:32)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.serialize(DynamicEntitySerializer.java:19)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider._serialize(DefaultSerializerProvider.java:502)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider.serializeValue(DefaultSerializerProvider.java:341)
+	at com.fasterxml.jackson.databind.ObjectMapper.writeValue(ObjectMapper.java:3365)
+	at com.fasterxml.jackson.core.base.GeneratorBase.writeObject(GeneratorBase.java:422)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.writeDynamicEntity(DynamicEntitySerializer.java:32)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.serialize(DynamicEntitySerializer.java:19)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider._serialize(DefaultSerializerProvider.java:502)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider.serializeValue(DefaultSerializerProvider.java:341)
+	at com.fasterxml.jackson.databind.ObjectMapper.writeValue(ObjectMapper.java:3365)
+	at com.fasterxml.jackson.core.base.GeneratorBase.writeObject(GeneratorBase.java:422)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.writeDynamicEntity(DynamicEntitySerializer.java:32)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.serialize(DynamicEntitySerializer.java:19)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider._serialize(DefaultSerializerProvider.java:502)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider.serializeValue(DefaultSerializerProvider.java:341)
+	at com.fasterxml.jackson.databind.ObjectMapper.writeValue(ObjectMapper.java:3365)
+	at com.fasterxml.jackson.core.base.GeneratorBase.writeObject(GeneratorBase.java:422)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.writeDynamicEntity(DynamicEntitySerializer.java:32)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.serialize(DynamicEntitySerializer.java:19)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider._serialize(DefaultSerializerProvider.java:502)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider.serializeValue(DefaultSerializerProvider.java:341)
+	at com.fasterxml.jackson.databind.ObjectMapper.writeValue(ObjectMapper.java:3365)
+	at com.fasterxml.jackson.core.base.GeneratorBase.writeObject(GeneratorBase.java:422)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.writeDynamicEntity(DynamicEntitySerializer.java:32)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.serialize(DynamicEntitySerializer.java:19)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider._serialize(DefaultSerializerProvider.java:502)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider.serializeValue(DefaultSerializerProvider.java:341)
+	at com.fasterxml.jackson.databind.ObjectMapper.writeValue(ObjectMapper.java:3365)
+	at com.fasterxml.jackson.core.base.GeneratorBase.writeObject(GeneratorBase.java:422)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.writeDynamicEntity(DynamicEntitySerializer.java:32)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.serialize(DynamicEntitySerializer.java:19)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider._serialize(DefaultSerializerProvider.java:502)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider.serializeValue(DefaultSerializerProvider.java:341)
+	at com.fasterxml.jackson.databind.ObjectMapper.writeValue(ObjectMapper.java:3365)
+	at com.fasterxml.jackson.core.base.GeneratorBase.writeObject(GeneratorBase.java:422)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.writeDynamicEntity(DynamicEntitySerializer.java:32)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.serialize(DynamicEntitySerializer.java:19)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider._serialize(DefaultSerializerProvider.java:502)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider.serializeValue(DefaultSerializerProvider.java:341)
+	at com.fasterxml.jackson.databind.ObjectMapper.writeValue(ObjectMapper.java:3365)
+	at com.fasterxml.jackson.core.base.GeneratorBase.writeObject(GeneratorBase.java:422)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.writeDynamicEntity(DynamicEntitySerializer.java:32)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.serialize(DynamicEntitySerializer.java:19)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider._serialize(DefaultSerializerProvider.java:502)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider.serializeValue(DefaultSerializerProvider.java:341)
+	at com.fasterxml.jackson.databind.ObjectMapper.writeValue(ObjectMapper.java:3365)
+	at com.fasterxml.jackson.core.base.GeneratorBase.writeObject(GeneratorBase.java:422)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.writeDynamicEntity(DynamicEntitySerializer.java:32)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.serialize(DynamicEntitySerializer.java:19)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider._serialize(DefaultSerializerProvider.java:502)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider.serializeValue(DefaultSerializerProvider.java:341)
+	at com.fasterxml.jackson.databind.ObjectMapper.writeValue(ObjectMapper.java:3365)
+	at com.fasterxml.jackson.core.base.GeneratorBase.writeObject(GeneratorBase.java:422)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.writeDynamicEntity(DynamicEntitySerializer.java:32)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.serialize(DynamicEntitySerializer.java:19)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider._serialize(DefaultSerializerProvider.java:502)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider.serializeValue(DefaultSerializerProvider.java:341)
+	at com.fasterxml.jackson.databind.ObjectMapper.writeValue(ObjectMapper.java:3365)
+	at com.fasterxml.jackson.core.base.GeneratorBase.writeObject(GeneratorBase.java:422)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.writeDynamicEntity(DynamicEntitySerializer.java:32)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.serialize(DynamicEntitySerializer.java:19)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider._serialize(DefaultSerializerProvider.java:502)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider.serializeValue(DefaultSerializerProvider.java:341)
+	at com.fasterxml.jackson.databind.ObjectMapper.writeValue(ObjectMapper.java:3365)
+	at com.fasterxml.jackson.core.base.GeneratorBase.writeObject(GeneratorBase.java:422)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.writeDynamicEntity(DynamicEntitySerializer.java:32)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.serialize(DynamicEntitySerializer.java:19)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider._serialize(DefaultSerializerProvider.java:502)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider.serializeValue(DefaultSerializerProvider.java:341)
+	at com.fasterxml.jackson.databind.ObjectMapper.writeValue(ObjectMapper.java:3365)
+	at com.fasterxml.jackson.core.base.GeneratorBase.writeObject(GeneratorBase.java:422)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.writeDynamicEntity(DynamicEntitySerializer.java:32)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.serialize(DynamicEntitySerializer.java:19)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider._serialize(DefaultSerializerProvider.java:502)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider.serializeValue(DefaultSerializerProvider.java:341)
+	at com.fasterxml.jackson.databind.ObjectMapper.writeValue(ObjectMapper.java:3365)
+	at com.fasterxml.jackson.core.base.GeneratorBase.writeObject(GeneratorBase.java:422)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.writeDynamicEntity(DynamicEntitySerializer.java:32)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.serialize(DynamicEntitySerializer.java:19)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider._serialize(DefaultSerializerProvider.java:502)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider.serializeValue(DefaultSerializerProvider.java:341)
+	at com.fasterxml.jackson.databind.ObjectMapper.writeValue(ObjectMapper.java:3365)
+	at com.fasterxml.jackson.core.base.GeneratorBase.writeObject(GeneratorBase.java:422)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.writeDynamicEntity(DynamicEntitySerializer.java:32)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.serialize(DynamicEntitySerializer.java:19)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider._serialize(DefaultSerializerProvider.java:502)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider.serializeValue(DefaultSerializerProvider.java:341)
+	at com.fasterxml.jackson.databind.ObjectMapper.writeValue(ObjectMapper.java:3365)
+	at com.fasterxml.jackson.core.base.GeneratorBase.writeObject(GeneratorBase.java:422)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.writeDynamicEntity(DynamicEntitySerializer.java:32)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.serialize(DynamicEntitySerializer.java:19)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider._serialize(DefaultSerializerProvider.java:502)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider.serializeValue(DefaultSerializerProvider.java:341)
+	at com.fasterxml.jackson.databind.ObjectMapper.writeValue(ObjectMapper.java:3365)
+	at com.fasterxml.jackson.core.base.GeneratorBase.writeObject(GeneratorBase.java:422)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.writeDynamicEntity(DynamicEntitySerializer.java:32)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.serialize(DynamicEntitySerializer.java:19)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider._serialize(DefaultSerializerProvider.java:502)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider.serializeValue(DefaultSerializerProvider.java:341)
+	at com.fasterxml.jackson.databind.ObjectMapper.writeValue(ObjectMapper.java:3365)
+	at com.fasterxml.jackson.core.base.GeneratorBase.writeObject(GeneratorBase.java:422)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.writeDynamicEntity(DynamicEntitySerializer.java:32)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.serialize(DynamicEntitySerializer.java:19)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider._serialize(DefaultSerializerProvider.java:502)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider.serializeValue(DefaultSerializerProvider.java:341)
+	at com.fasterxml.jackson.databind.ObjectMapper.writeValue(ObjectMapper.java:3365)
+	at com.fasterxml.jackson.core.base.GeneratorBase.writeObject(GeneratorBase.java:422)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.writeDynamicEntity(DynamicEntitySerializer.java:32)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.serialize(DynamicEntitySerializer.java:19)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider._serialize(DefaultSerializerProvider.java:502)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider.serializeValue(DefaultSerializerProvider.java:341)
+	at com.fasterxml.jackson.databind.ObjectMapper.writeValue(ObjectMapper.java:3365)
+	at com.fasterxml.jackson.core.base.GeneratorBase.writeObject(GeneratorBase.java:422)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.writeDynamicEntity(DynamicEntitySerializer.java:32)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.serialize(DynamicEntitySerializer.java:19)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider._serialize(DefaultSerializerProvider.java:502)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider.serializeValue(DefaultSerializerProvider.java:341)
+	at com.fasterxml.jackson.databind.ObjectMapper.writeValue(ObjectMapper.java:3365)
+	at com.fasterxml.jackson.core.base.GeneratorBase.writeObject(GeneratorBase.java:422)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.writeDynamicEntity(DynamicEntitySerializer.java:32)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.serialize(DynamicEntitySerializer.java:19)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider._serialize(DefaultSerializerProvider.java:502)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider.serializeValue(DefaultSerializerProvider.java:341)
+	at com.fasterxml.jackson.databind.ObjectMapper.writeValue(ObjectMapper.java:3365)
+	at com.fasterxml.jackson.core.base.GeneratorBase.writeObject(GeneratorBase.java:422)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.writeDynamicEntity(DynamicEntitySerializer.java:32)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.serialize(DynamicEntitySerializer.java:19)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider._serialize(DefaultSerializerProvider.java:502)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider.serializeValue(DefaultSerializerProvider.java:341)
+	at com.fasterxml.jackson.databind.ObjectMapper.writeValue(ObjectMapper.java:3365)
+	at com.fasterxml.jackson.core.base.GeneratorBase.writeObject(GeneratorBase.java:422)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.writeDynamicEntity(DynamicEntitySerializer.java:32)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.serialize(DynamicEntitySerializer.java:19)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider._serialize(DefaultSerializerProvider.java:502)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider.serializeValue(DefaultSerializerProvider.java:341)
+	at com.fasterxml.jackson.databind.ObjectMapper.writeValue(ObjectMapper.java:3365)
+	at com.fasterxml.jackson.core.base.GeneratorBase.writeObject(GeneratorBase.java:422)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.writeDynamicEntity(DynamicEntitySerializer.java:32)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.serialize(DynamicEntitySerializer.java:19)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider._serialize(DefaultSerializerProvider.java:502)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider.serializeValue(DefaultSerializerProvider.java:341)
+	at com.fasterxml.jackson.databind.ObjectMapper.writeValue(ObjectMapper.java:3365)
+	at com.fasterxml.jackson.core.base.GeneratorBase.writeObject(GeneratorBase.java:422)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.writeDynamicEntity(DynamicEntitySerializer.java:32)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.serialize(DynamicEntitySerializer.java:19)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider._serialize(DefaultSerializerProvider.java:502)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider.serializeValue(DefaultSerializerProvider.java:341)
+	at com.fasterxml.jackson.databind.ObjectMapper.writeValue(ObjectMapper.java:3365)
+	at com.fasterxml.jackson.core.base.GeneratorBase.writeObject(GeneratorBase.java:422)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.writeDynamicEntity(DynamicEntitySerializer.java:32)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.serialize(DynamicEntitySerializer.java:19)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider._serialize(DefaultSerializerProvider.java:502)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider.serializeValue(DefaultSerializerProvider.java:341)
+	at com.fasterxml.jackson.databind.ObjectMapper.writeValue(ObjectMapper.java:3365)
+	at com.fasterxml.jackson.core.base.GeneratorBase.writeObject(GeneratorBase.java:422)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.writeDynamicEntity(DynamicEntitySerializer.java:32)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.serialize(DynamicEntitySerializer.java:19)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider._serialize(DefaultSerializerProvider.java:502)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider.serializeValue(DefaultSerializerProvider.java:341)
+	at com.fasterxml.jackson.databind.ObjectMapper.writeValue(ObjectMapper.java:3365)
+	at com.fasterxml.jackson.core.base.GeneratorBase.writeObject(GeneratorBase.java:422)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.writeDynamicEntity(DynamicEntitySerializer.java:32)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.serialize(DynamicEntitySerializer.java:19)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider._serialize(DefaultSerializerProvider.java:502)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider.serializeValue(DefaultSerializerProvider.java:341)
+	at com.fasterxml.jackson.databind.ObjectMapper.writeValue(ObjectMapper.java:3365)
+	at com.fasterxml.jackson.core.base.GeneratorBase.writeObject(GeneratorBase.java:422)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.writeDynamicEntity(DynamicEntitySerializer.java:32)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.serialize(DynamicEntitySerializer.java:19)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider._serialize(DefaultSerializerProvider.java:502)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider.serializeValue(DefaultSerializerProvider.java:341)
+	at com.fasterxml.jackson.databind.ObjectMapper.writeValue(ObjectMapper.java:3365)
+	at com.fasterxml.jackson.core.base.GeneratorBase.writeObject(GeneratorBase.java:422)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.writeDynamicEntity(DynamicEntitySerializer.java:32)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.serialize(DynamicEntitySerializer.java:19)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider._serialize(DefaultSerializerProvider.java:502)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider.serializeValue(DefaultSerializerProvider.java:341)
+	at com.fasterxml.jackson.databind.ObjectMapper.writeValue(ObjectMapper.java:3365)
+	at com.fasterxml.jackson.core.base.GeneratorBase.writeObject(GeneratorBase.java:422)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.writeDynamicEntity(DynamicEntitySerializer.java:32)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.serialize(DynamicEntitySerializer.java:19)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider._serialize(DefaultSerializerProvider.java:502)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider.serializeValue(DefaultSerializerProvider.java:341)
+	at com.fasterxml.jackson.databind.ObjectMapper.writeValue(ObjectMapper.java:3365)
+	at com.fasterxml.jackson.core.base.GeneratorBase.writeObject(GeneratorBase.java:422)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.writeDynamicEntity(DynamicEntitySerializer.java:32)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.serialize(DynamicEntitySerializer.java:19)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider._serialize(DefaultSerializerProvider.java:502)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider.serializeValue(DefaultSerializerProvider.java:341)
+	at com.fasterxml.jackson.databind.ObjectMapper.writeValue(ObjectMapper.java:3365)
+	at com.fasterxml.jackson.core.base.GeneratorBase.writeObject(GeneratorBase.java:422)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.writeDynamicEntity(DynamicEntitySerializer.java:32)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.serialize(DynamicEntitySerializer.java:19)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider._serialize(DefaultSerializerProvider.java:502)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider.serializeValue(DefaultSerializerProvider.java:341)
+	at com.fasterxml.jackson.databind.ObjectMapper.writeValue(ObjectMapper.java:3365)
+	at com.fasterxml.jackson.core.base.GeneratorBase.writeObject(GeneratorBase.java:422)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.writeDynamicEntity(DynamicEntitySerializer.java:32)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.serialize(DynamicEntitySerializer.java:19)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider._serialize(DefaultSerializerProvider.java:502)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider.serializeValue(DefaultSerializerProvider.java:341)
+	at com.fasterxml.jackson.databind.ObjectMapper.writeValue(ObjectMapper.java:3365)
+	at com.fasterxml.jackson.core.base.GeneratorBase.writeObject(GeneratorBase.java:422)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.writeDynamicEntity(DynamicEntitySerializer.java:32)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.serialize(DynamicEntitySerializer.java:19)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider._serialize(DefaultSerializerProvider.java:502)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider.serializeValue(DefaultSerializerProvider.java:341)
+	at com.fasterxml.jackson.databind.ObjectMapper.writeValue(ObjectMapper.java:3365)
+	at com.fasterxml.jackson.core.base.GeneratorBase.writeObject(GeneratorBase.java:422)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.writeDynamicEntity(DynamicEntitySerializer.java:32)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.serialize(DynamicEntitySerializer.java:19)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider._serialize(DefaultSerializerProvider.java:502)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider.serializeValue(DefaultSerializerProvider.java:341)
+	at com.fasterxml.jackson.databind.ObjectMapper.writeValue(ObjectMapper.java:3365)
+	at com.fasterxml.jackson.core.base.GeneratorBase.writeObject(GeneratorBase.java:422)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.writeDynamicEntity(DynamicEntitySerializer.java:32)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.serialize(DynamicEntitySerializer.java:19)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider._serialize(DefaultSerializerProvider.java:502)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider.serializeValue(DefaultSerializerProvider.java:341)
+	at com.fasterxml.jackson.databind.ObjectMapper.writeValue(ObjectMapper.java:3365)
+	at com.fasterxml.jackson.core.base.GeneratorBase.writeObject(GeneratorBase.java:422)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.writeDynamicEntity(DynamicEntitySerializer.java:32)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.serialize(DynamicEntitySerializer.java:19)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider._serialize(DefaultSerializerProvider.java:502)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider.serializeValue(DefaultSerializerProvider.java:341)
+	at com.fasterxml.jackson.databind.ObjectMapper.writeValue(ObjectMapper.java:3365)
+	at com.fasterxml.jackson.core.base.GeneratorBase.writeObject(GeneratorBase.java:422)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.writeDynamicEntity(DynamicEntitySerializer.java:32)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.serialize(DynamicEntitySerializer.java:19)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider._serialize(DefaultSerializerProvider.java:502)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider.serializeValue(DefaultSerializerProvider.java:341)
+	at com.fasterxml.jackson.databind.ObjectMapper.writeValue(ObjectMapper.java:3365)
+	at com.fasterxml.jackson.core.base.GeneratorBase.writeObject(GeneratorBase.java:422)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.writeDynamicEntity(DynamicEntitySerializer.java:32)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.serialize(DynamicEntitySerializer.java:19)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider._serialize(DefaultSerializerProvider.java:502)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider.serializeValue(DefaultSerializerProvider.java:341)
+	at com.fasterxml.jackson.databind.ObjectMapper.writeValue(ObjectMapper.java:3365)
+	at com.fasterxml.jackson.core.base.GeneratorBase.writeObject(GeneratorBase.java:422)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.writeDynamicEntity(DynamicEntitySerializer.java:32)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.serialize(DynamicEntitySerializer.java:19)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider._serialize(DefaultSerializerProvider.java:502)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider.serializeValue(DefaultSerializerProvider.java:341)
+	at com.fasterxml.jackson.databind.ObjectMapper.writeValue(ObjectMapper.java:3365)
+	at com.fasterxml.jackson.core.base.GeneratorBase.writeObject(GeneratorBase.java:422)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.writeDynamicEntity(DynamicEntitySerializer.java:32)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.serialize(DynamicEntitySerializer.java:19)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider._serialize(DefaultSerializerProvider.java:502)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider.serializeValue(DefaultSerializerProvider.java:341)
+	at com.fasterxml.jackson.databind.ObjectMapper.writeValue(ObjectMapper.java:3365)
+	at com.fasterxml.jackson.core.base.GeneratorBase.writeObject(GeneratorBase.java:422)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.writeDynamicEntity(DynamicEntitySerializer.java:32)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.serialize(DynamicEntitySerializer.java:19)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider._serialize(DefaultSerializerProvider.java:502)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider.serializeValue(DefaultSerializerProvider.java:341)
+	at com.fasterxml.jackson.databind.ObjectMapper.writeValue(ObjectMapper.java:3365)
+	at com.fasterxml.jackson.core.base.GeneratorBase.writeObject(GeneratorBase.java:422)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.writeDynamicEntity(DynamicEntitySerializer.java:32)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.serialize(DynamicEntitySerializer.java:19)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider._serialize(DefaultSerializerProvider.java:502)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider.serializeValue(DefaultSerializerProvider.java:341)
+	at com.fasterxml.jackson.databind.ObjectMapper.writeValue(ObjectMapper.java:3365)
+	at com.fasterxml.jackson.core.base.GeneratorBase.writeObject(GeneratorBase.java:422)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.writeDynamicEntity(DynamicEntitySerializer.java:32)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.serialize(DynamicEntitySerializer.java:19)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider._serialize(DefaultSerializerProvider.java:502)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider.serializeValue(DefaultSerializerProvider.java:341)
+	at com.fasterxml.jackson.databind.ObjectMapper.writeValue(ObjectMapper.java:3365)
+	at com.fasterxml.jackson.core.base.GeneratorBase.writeObject(GeneratorBase.java:422)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.writeDynamicEntity(DynamicEntitySerializer.java:32)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.serialize(DynamicEntitySerializer.java:19)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider._serialize(DefaultSerializerProvider.java:502)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider.serializeValue(DefaultSerializerProvider.java:341)
+	at com.fasterxml.jackson.databind.ObjectMapper.writeValue(ObjectMapper.java:3365)
+	at com.fasterxml.jackson.core.base.GeneratorBase.writeObject(GeneratorBase.java:422)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.writeDynamicEntity(DynamicEntitySerializer.java:32)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.serialize(DynamicEntitySerializer.java:19)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider._serialize(DefaultSerializerProvider.java:502)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider.serializeValue(DefaultSerializerProvider.java:341)
+	at com.fasterxml.jackson.databind.ObjectMapper.writeValue(ObjectMapper.java:3365)
+	at com.fasterxml.jackson.core.base.GeneratorBase.writeObject(GeneratorBase.java:422)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.writeDynamicEntity(DynamicEntitySerializer.java:32)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.serialize(DynamicEntitySerializer.java:19)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider._serialize(DefaultSerializerProvider.java:502)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider.serializeValue(DefaultSerializerProvider.java:341)
+	at com.fasterxml.jackson.databind.ObjectMapper.writeValue(ObjectMapper.java:3365)
+	at com.fasterxml.jackson.core.base.GeneratorBase.writeObject(GeneratorBase.java:422)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.writeDynamicEntity(DynamicEntitySerializer.java:32)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.serialize(DynamicEntitySerializer.java:19)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider._serialize(DefaultSerializerProvider.java:502)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider.serializeValue(DefaultSerializerProvider.java:341)
+	at com.fasterxml.jackson.databind.ObjectMapper.writeValue(ObjectMapper.java:3365)
+	at com.fasterxml.jackson.core.base.GeneratorBase.writeObject(GeneratorBase.java:422)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.writeDynamicEntity(DynamicEntitySerializer.java:32)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.serialize(DynamicEntitySerializer.java:19)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider._serialize(DefaultSerializerProvider.java:502)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider.serializeValue(DefaultSerializerProvider.java:341)
+	at com.fasterxml.jackson.databind.ObjectMapper.writeValue(ObjectMapper.java:3365)
+	at com.fasterxml.jackson.core.base.GeneratorBase.writeObject(GeneratorBase.java:422)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.writeDynamicEntity(DynamicEntitySerializer.java:32)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.serialize(DynamicEntitySerializer.java:19)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider._serialize(DefaultSerializerProvider.java:502)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider.serializeValue(DefaultSerializerProvider.java:341)
+	at com.fasterxml.jackson.databind.ObjectMapper.writeValue(ObjectMapper.java:3365)
+	at com.fasterxml.jackson.core.base.GeneratorBase.writeObject(GeneratorBase.java:422)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.writeDynamicEntity(DynamicEntitySerializer.java:32)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.serialize(DynamicEntitySerializer.java:19)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider._serialize(DefaultSerializerProvider.java:502)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider.serializeValue(DefaultSerializerProvider.java:341)
+	at com.fasterxml.jackson.databind.ObjectMapper.writeValue(ObjectMapper.java:3365)
+	at com.fasterxml.jackson.core.base.GeneratorBase.writeObject(GeneratorBase.java:422)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.writeDynamicEntity(DynamicEntitySerializer.java:32)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.serialize(DynamicEntitySerializer.java:19)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider._serialize(DefaultSerializerProvider.java:502)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider.serializeValue(DefaultSerializerProvider.java:341)
+	at com.fasterxml.jackson.databind.ObjectMapper.writeValue(ObjectMapper.java:3365)
+	at com.fasterxml.jackson.core.base.GeneratorBase.writeObject(GeneratorBase.java:422)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.writeDynamicEntity(DynamicEntitySerializer.java:32)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.serialize(DynamicEntitySerializer.java:19)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider._serialize(DefaultSerializerProvider.java:502)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider.serializeValue(DefaultSerializerProvider.java:341)
+	at com.fasterxml.jackson.databind.ObjectMapper.writeValue(ObjectMapper.java:3365)
+	at com.fasterxml.jackson.core.base.GeneratorBase.writeObject(GeneratorBase.java:422)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.writeDynamicEntity(DynamicEntitySerializer.java:32)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.serialize(DynamicEntitySerializer.java:19)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider._serialize(DefaultSerializerProvider.java:502)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider.serializeValue(DefaultSerializerProvider.java:341)
+	at com.fasterxml.jackson.databind.ObjectMapper.writeValue(ObjectMapper.java:3365)
+	at com.fasterxml.jackson.core.base.GeneratorBase.writeObject(GeneratorBase.java:422)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.writeDynamicEntity(DynamicEntitySerializer.java:32)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.serialize(DynamicEntitySerializer.java:19)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider._serialize(DefaultSerializerProvider.java:502)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider.serializeValue(DefaultSerializerProvider.java:341)
+	at com.fasterxml.jackson.databind.ObjectMapper.writeValue(ObjectMapper.java:3365)
+	at com.fasterxml.jackson.core.base.GeneratorBase.writeObject(GeneratorBase.java:422)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.writeDynamicEntity(DynamicEntitySerializer.java:32)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.serialize(DynamicEntitySerializer.java:19)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider._serialize(DefaultSerializerProvider.java:502)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider.serializeValue(DefaultSerializerProvider.java:341)
+	at com.fasterxml.jackson.databind.ObjectMapper.writeValue(ObjectMapper.java:3365)
+	at com.fasterxml.jackson.core.base.GeneratorBase.writeObject(GeneratorBase.java:422)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.writeDynamicEntity(DynamicEntitySerializer.java:32)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.serialize(DynamicEntitySerializer.java:19)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider._serialize(DefaultSerializerProvider.java:502)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider.serializeValue(DefaultSerializerProvider.java:341)
+	at com.fasterxml.jackson.databind.ObjectMapper.writeValue(ObjectMapper.java:3365)
+	at com.fasterxml.jackson.core.base.GeneratorBase.writeObject(GeneratorBase.java:422)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.writeDynamicEntity(DynamicEntitySerializer.java:32)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.serialize(DynamicEntitySerializer.java:19)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider._serialize(DefaultSerializerProvider.java:502)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider.serializeValue(DefaultSerializerProvider.java:341)
+	at com.fasterxml.jackson.databind.ObjectMapper.writeValue(ObjectMapper.java:3365)
+	at com.fasterxml.jackson.core.base.GeneratorBase.writeObject(GeneratorBase.java:422)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.writeDynamicEntity(DynamicEntitySerializer.java:32)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.serialize(DynamicEntitySerializer.java:19)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider._serialize(DefaultSerializerProvider.java:502)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider.serializeValue(DefaultSerializerProvider.java:341)
+	at com.fasterxml.jackson.databind.ObjectMapper.writeValue(ObjectMapper.java:3365)
+	at com.fasterxml.jackson.core.base.GeneratorBase.writeObject(GeneratorBase.java:422)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.writeDynamicEntity(DynamicEntitySerializer.java:32)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.serialize(DynamicEntitySerializer.java:19)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider._serialize(DefaultSerializerProvider.java:502)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider.serializeValue(DefaultSerializerProvider.java:341)
+	at com.fasterxml.jackson.databind.ObjectMapper.writeValue(ObjectMapper.java:3365)
+	at com.fasterxml.jackson.core.base.GeneratorBase.writeObject(GeneratorBase.java:422)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.writeDynamicEntity(DynamicEntitySerializer.java:32)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.serialize(DynamicEntitySerializer.java:19)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider._serialize(DefaultSerializerProvider.java:502)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider.serializeValue(DefaultSerializerProvider.java:341)
+	at com.fasterxml.jackson.databind.ObjectMapper.writeValue(ObjectMapper.java:3365)
+	at com.fasterxml.jackson.core.base.GeneratorBase.writeObject(GeneratorBase.java:422)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.writeDynamicEntity(DynamicEntitySerializer.java:32)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.serialize(DynamicEntitySerializer.java:19)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider._serialize(DefaultSerializerProvider.java:502)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider.serializeValue(DefaultSerializerProvider.java:341)
+	at com.fasterxml.jackson.databind.ObjectMapper.writeValue(ObjectMapper.java:3365)
+	at com.fasterxml.jackson.core.base.GeneratorBase.writeObject(GeneratorBase.java:422)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.writeDynamicEntity(DynamicEntitySerializer.java:32)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.serialize(DynamicEntitySerializer.java:19)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider._serialize(DefaultSerializerProvider.java:502)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider.serializeValue(DefaultSerializerProvider.java:341)
+	at com.fasterxml.jackson.databind.ObjectMapper.writeValue(ObjectMapper.java:3365)
+	at com.fasterxml.jackson.core.base.GeneratorBase.writeObject(GeneratorBase.java:422)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.writeDynamicEntity(DynamicEntitySerializer.java:32)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.serialize(DynamicEntitySerializer.java:19)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider._serialize(DefaultSerializerProvider.java:502)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider.serializeValue(DefaultSerializerProvider.java:341)
+	at com.fasterxml.jackson.databind.ObjectMapper.writeValue(ObjectMapper.java:3365)
+	at com.fasterxml.jackson.core.base.GeneratorBase.writeObject(GeneratorBase.java:422)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.writeDynamicEntity(DynamicEntitySerializer.java:32)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.serialize(DynamicEntitySerializer.java:19)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider._serialize(DefaultSerializerProvider.java:502)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider.serializeValue(DefaultSerializerProvider.java:341)
+	at com.fasterxml.jackson.databind.ObjectMapper.writeValue(ObjectMapper.java:3365)
+	at com.fasterxml.jackson.core.base.GeneratorBase.writeObject(GeneratorBase.java:422)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.writeDynamicEntity(DynamicEntitySerializer.java:32)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.serialize(DynamicEntitySerializer.java:19)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider._serialize(DefaultSerializerProvider.java:502)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider.serializeValue(DefaultSerializerProvider.java:341)
+	at com.fasterxml.jackson.databind.ObjectMapper.writeValue(ObjectMapper.java:3365)
+	at com.fasterxml.jackson.core.base.GeneratorBase.writeObject(GeneratorBase.java:422)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.writeDynamicEntity(DynamicEntitySerializer.java:32)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.serialize(DynamicEntitySerializer.java:19)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider._serialize(DefaultSerializerProvider.java:502)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider.serializeValue(DefaultSerializerProvider.java:341)
+	at com.fasterxml.jackson.databind.ObjectMapper.writeValue(ObjectMapper.java:3365)
+	at com.fasterxml.jackson.core.base.GeneratorBase.writeObject(GeneratorBase.java:422)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.writeDynamicEntity(DynamicEntitySerializer.java:32)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.serialize(DynamicEntitySerializer.java:19)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider._serialize(DefaultSerializerProvider.java:502)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider.serializeValue(DefaultSerializerProvider.java:341)
+	at com.fasterxml.jackson.databind.ObjectMapper.writeValue(ObjectMapper.java:3365)
+	at com.fasterxml.jackson.core.base.GeneratorBase.writeObject(GeneratorBase.java:422)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.writeDynamicEntity(DynamicEntitySerializer.java:32)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.serialize(DynamicEntitySerializer.java:19)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider._serialize(DefaultSerializerProvider.java:502)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider.serializeValue(DefaultSerializerProvider.java:341)
+	at com.fasterxml.jackson.databind.ObjectMapper.writeValue(ObjectMapper.java:3365)
+	at com.fasterxml.jackson.core.base.GeneratorBase.writeObject(GeneratorBase.java:422)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.writeDynamicEntity(DynamicEntitySerializer.java:32)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.serialize(DynamicEntitySerializer.java:19)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider._serialize(DefaultSerializerProvider.java:502)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider.serializeValue(DefaultSerializerProvider.java:341)
+	at com.fasterxml.jackson.databind.ObjectMapper.writeValue(ObjectMapper.java:3365)
+	at com.fasterxml.jackson.core.base.GeneratorBase.writeObject(GeneratorBase.java:422)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.writeDynamicEntity(DynamicEntitySerializer.java:32)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.serialize(DynamicEntitySerializer.java:19)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider._serialize(DefaultSerializerProvider.java:502)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider.serializeValue(DefaultSerializerProvider.java:341)
+	at com.fasterxml.jackson.databind.ObjectMapper.writeValue(ObjectMapper.java:3365)
+	at com.fasterxml.jackson.core.base.GeneratorBase.writeObject(GeneratorBase.java:422)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.writeDynamicEntity(DynamicEntitySerializer.java:32)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.serialize(DynamicEntitySerializer.java:19)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider._serialize(DefaultSerializerProvider.java:502)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider.serializeValue(DefaultSerializerProvider.java:341)
+	at com.fasterxml.jackson.databind.ObjectMapper.writeValue(ObjectMapper.java:3365)
+	at com.fasterxml.jackson.core.base.GeneratorBase.writeObject(GeneratorBase.java:422)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.writeDynamicEntity(DynamicEntitySerializer.java:32)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.serialize(DynamicEntitySerializer.java:19)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider._serialize(DefaultSerializerProvider.java:502)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider.serializeValue(DefaultSerializerProvider.java:341)
+	at com.fasterxml.jackson.databind.ObjectMapper.writeValue(ObjectMapper.java:3365)
+	at com.fasterxml.jackson.core.base.GeneratorBase.writeObject(GeneratorBase.java:422)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.writeDynamicEntity(DynamicEntitySerializer.java:32)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.serialize(DynamicEntitySerializer.java:19)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider._serialize(DefaultSerializerProvider.java:502)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider.serializeValue(DefaultSerializerProvider.java:341)
+	at com.fasterxml.jackson.databind.ObjectMapper.writeValue(ObjectMapper.java:3365)
+	at com.fasterxml.jackson.core.base.GeneratorBase.writeObject(GeneratorBase.java:422)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.writeDynamicEntity(DynamicEntitySerializer.java:32)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.serialize(DynamicEntitySerializer.java:19)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider._serialize(DefaultSerializerProvider.java:502)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider.serializeValue(DefaultSerializerProvider.java:341)
+	at com.fasterxml.jackson.databind.ObjectMapper.writeValue(ObjectMapper.java:3365)
+	at com.fasterxml.jackson.core.base.GeneratorBase.writeObject(GeneratorBase.java:422)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.writeDynamicEntity(DynamicEntitySerializer.java:32)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.serialize(DynamicEntitySerializer.java:19)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider._serialize(DefaultSerializerProvider.java:502)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider.serializeValue(DefaultSerializerProvider.java:341)
+	at com.fasterxml.jackson.databind.ObjectMapper.writeValue(ObjectMapper.java:3365)
+	at com.fasterxml.jackson.core.base.GeneratorBase.writeObject(GeneratorBase.java:422)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.writeDynamicEntity(DynamicEntitySerializer.java:32)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.serialize(DynamicEntitySerializer.java:19)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider._serialize(DefaultSerializerProvider.java:502)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider.serializeValue(DefaultSerializerProvider.java:341)
+	at com.fasterxml.jackson.databind.ObjectMapper.writeValue(ObjectMapper.java:3365)
+	at com.fasterxml.jackson.core.base.GeneratorBase.writeObject(GeneratorBase.java:422)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.writeDynamicEntity(DynamicEntitySerializer.java:32)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.serialize(DynamicEntitySerializer.java:19)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider._serialize(DefaultSerializerProvider.java:502)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider.serializeValue(DefaultSerializerProvider.java:341)
+	at com.fasterxml.jackson.databind.ObjectMapper.writeValue(ObjectMapper.java:3365)
+	at com.fasterxml.jackson.core.base.GeneratorBase.writeObject(GeneratorBase.java:422)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.writeDynamicEntity(DynamicEntitySerializer.java:32)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.serialize(DynamicEntitySerializer.java:19)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider._serialize(DefaultSerializerProvider.java:502)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider.serializeValue(DefaultSerializerProvider.java:341)
+	at com.fasterxml.jackson.databind.ObjectMapper.writeValue(ObjectMapper.java:3365)
+	at com.fasterxml.jackson.core.base.GeneratorBase.writeObject(GeneratorBase.java:422)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.writeDynamicEntity(DynamicEntitySerializer.java:32)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.serialize(DynamicEntitySerializer.java:19)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider._serialize(DefaultSerializerProvider.java:502)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider.serializeValue(DefaultSerializerProvider.java:341)
+	at com.fasterxml.jackson.databind.ObjectMapper.writeValue(ObjectMapper.java:3365)
+	at com.fasterxml.jackson.core.base.GeneratorBase.writeObject(GeneratorBase.java:422)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.writeDynamicEntity(DynamicEntitySerializer.java:32)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.serialize(DynamicEntitySerializer.java:19)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider._serialize(DefaultSerializerProvider.java:502)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider.serializeValue(DefaultSerializerProvider.java:341)
+	at com.fasterxml.jackson.databind.ObjectMapper.writeValue(ObjectMapper.java:3365)
+	at com.fasterxml.jackson.core.base.GeneratorBase.writeObject(GeneratorBase.java:422)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.writeDynamicEntity(DynamicEntitySerializer.java:32)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.serialize(DynamicEntitySerializer.java:19)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider._serialize(DefaultSerializerProvider.java:502)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider.serializeValue(DefaultSerializerProvider.java:341)
+	at com.fasterxml.jackson.databind.ObjectMapper.writeValue(ObjectMapper.java:3365)
+	at com.fasterxml.jackson.core.base.GeneratorBase.writeObject(GeneratorBase.java:422)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.writeDynamicEntity(DynamicEntitySerializer.java:32)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.serialize(DynamicEntitySerializer.java:19)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider._serialize(DefaultSerializerProvider.java:502)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider.serializeValue(DefaultSerializerProvider.java:341)
+	at com.fasterxml.jackson.databind.ObjectMapper.writeValue(ObjectMapper.java:3365)
+	at com.fasterxml.jackson.core.base.GeneratorBase.writeObject(GeneratorBase.java:422)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.writeDynamicEntity(DynamicEntitySerializer.java:32)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.serialize(DynamicEntitySerializer.java:19)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider._serialize(DefaultSerializerProvider.java:502)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider.serializeValue(DefaultSerializerProvider.java:341)
+	at com.fasterxml.jackson.databind.ObjectMapper.writeValue(ObjectMapper.java:3365)
+	at com.fasterxml.jackson.core.base.GeneratorBase.writeObject(GeneratorBase.java:422)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.writeDynamicEntity(DynamicEntitySerializer.java:32)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.serialize(DynamicEntitySerializer.java:19)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider._serialize(DefaultSerializerProvider.java:502)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider.serializeValue(DefaultSerializerProvider.java:341)
+	at com.fasterxml.jackson.databind.ObjectMapper.writeValue(ObjectMapper.java:3365)
+	at com.fasterxml.jackson.core.base.GeneratorBase.writeObject(GeneratorBase.java:422)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.writeDynamicEntity(DynamicEntitySerializer.java:32)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.serialize(DynamicEntitySerializer.java:19)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider._serialize(DefaultSerializerProvider.java:502)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider.serializeValue(DefaultSerializerProvider.java:341)
+	at com.fasterxml.jackson.databind.ObjectMapper.writeValue(ObjectMapper.java:3365)
+	at com.fasterxml.jackson.core.base.GeneratorBase.writeObject(GeneratorBase.java:422)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.writeDynamicEntity(DynamicEntitySerializer.java:32)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.serialize(DynamicEntitySerializer.java:19)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider._serialize(DefaultSerializerProvider.java:502)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider.serializeValue(DefaultSerializerProvider.java:341)
+	at com.fasterxml.jackson.databind.ObjectMapper.writeValue(ObjectMapper.java:3365)
+	at com.fasterxml.jackson.core.base.GeneratorBase.writeObject(GeneratorBase.java:422)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.writeDynamicEntity(DynamicEntitySerializer.java:32)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.serialize(DynamicEntitySerializer.java:19)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider._serialize(DefaultSerializerProvider.java:502)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider.serializeValue(DefaultSerializerProvider.java:341)
+	at com.fasterxml.jackson.databind.ObjectMapper.writeValue(ObjectMapper.java:3365)
+	at com.fasterxml.jackson.core.base.GeneratorBase.writeObject(GeneratorBase.java:422)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.writeDynamicEntity(DynamicEntitySerializer.java:32)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.serialize(DynamicEntitySerializer.java:19)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider._serialize(DefaultSerializerProvider.java:502)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider.serializeValue(DefaultSerializerProvider.java:341)
+	at com.fasterxml.jackson.databind.ObjectMapper.writeValue(ObjectMapper.java:3365)
+	at com.fasterxml.jackson.core.base.GeneratorBase.writeObject(GeneratorBase.java:422)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.writeDynamicEntity(DynamicEntitySerializer.java:32)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.serialize(DynamicEntitySerializer.java:19)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider._serialize(DefaultSerializerProvider.java:502)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider.serializeValue(DefaultSerializerProvider.java:341)
+	at com.fasterxml.jackson.databind.ObjectMapper.writeValue(ObjectMapper.java:3365)
+	at com.fasterxml.jackson.core.base.GeneratorBase.writeObject(GeneratorBase.java:422)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.writeDynamicEntity(DynamicEntitySerializer.java:32)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.serialize(DynamicEntitySerializer.java:19)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider._serialize(DefaultSerializerProvider.java:502)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider.serializeValue(DefaultSerializerProvider.java:341)
+	at com.fasterxml.jackson.databind.ObjectMapper.writeValue(ObjectMapper.java:3365)
+	at com.fasterxml.jackson.core.base.GeneratorBase.writeObject(GeneratorBase.java:422)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.writeDynamicEntity(DynamicEntitySerializer.java:32)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.serialize(DynamicEntitySerializer.java:19)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider._serialize(DefaultSerializerProvider.java:502)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider.serializeValue(DefaultSerializerProvider.java:341)
+	at com.fasterxml.jackson.databind.ObjectMapper.writeValue(ObjectMapper.java:3365)
+	at com.fasterxml.jackson.core.base.GeneratorBase.writeObject(GeneratorBase.java:422)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.writeDynamicEntity(DynamicEntitySerializer.java:32)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.serialize(DynamicEntitySerializer.java:19)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider._serialize(DefaultSerializerProvider.java:502)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider.serializeValue(DefaultSerializerProvider.java:341)
+	at com.fasterxml.jackson.databind.ObjectMapper.writeValue(ObjectMapper.java:3365)
+	at com.fasterxml.jackson.core.base.GeneratorBase.writeObject(GeneratorBase.java:422)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.writeDynamicEntity(DynamicEntitySerializer.java:32)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.serialize(DynamicEntitySerializer.java:19)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider._serialize(DefaultSerializerProvider.java:502)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider.serializeValue(DefaultSerializerProvider.java:341)
+	at com.fasterxml.jackson.databind.ObjectMapper.writeValue(ObjectMapper.java:3365)
+	at com.fasterxml.jackson.core.base.GeneratorBase.writeObject(GeneratorBase.java:422)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.writeDynamicEntity(DynamicEntitySerializer.java:32)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.serialize(DynamicEntitySerializer.java:19)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider._serialize(DefaultSerializerProvider.java:502)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider.serializeValue(DefaultSerializerProvider.java:341)
+	at com.fasterxml.jackson.databind.ObjectMapper.writeValue(ObjectMapper.java:3365)
+	at com.fasterxml.jackson.core.base.GeneratorBase.writeObject(GeneratorBase.java:422)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.writeDynamicEntity(DynamicEntitySerializer.java:32)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.serialize(DynamicEntitySerializer.java:19)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider._serialize(DefaultSerializerProvider.java:502)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider.serializeValue(DefaultSerializerProvider.java:341)
+	at com.fasterxml.jackson.databind.ObjectMapper.writeValue(ObjectMapper.java:3365)
+	at com.fasterxml.jackson.core.base.GeneratorBase.writeObject(GeneratorBase.java:422)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.writeDynamicEntity(DynamicEntitySerializer.java:32)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.serialize(DynamicEntitySerializer.java:19)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider._serialize(DefaultSerializerProvider.java:502)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider.serializeValue(DefaultSerializerProvider.java:341)
+	at com.fasterxml.jackson.databind.ObjectMapper.writeValue(ObjectMapper.java:3365)
+	at com.fasterxml.jackson.core.base.GeneratorBase.writeObject(GeneratorBase.java:422)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.writeDynamicEntity(DynamicEntitySerializer.java:32)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.serialize(DynamicEntitySerializer.java:19)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider._serialize(DefaultSerializerProvider.java:502)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider.serializeValue(DefaultSerializerProvider.java:341)
+	at com.fasterxml.jackson.databind.ObjectMapper.writeValue(ObjectMapper.java:3365)
+	at com.fasterxml.jackson.core.base.GeneratorBase.writeObject(GeneratorBase.java:422)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.writeDynamicEntity(DynamicEntitySerializer.java:32)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.serialize(DynamicEntitySerializer.java:19)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider._serialize(DefaultSerializerProvider.java:502)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider.serializeValue(DefaultSerializerProvider.java:341)
+	at com.fasterxml.jackson.databind.ObjectMapper.writeValue(ObjectMapper.java:3365)
+	at com.fasterxml.jackson.core.base.GeneratorBase.writeObject(GeneratorBase.java:422)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.writeDynamicEntity(DynamicEntitySerializer.java:32)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.serialize(DynamicEntitySerializer.java:19)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider._serialize(DefaultSerializerProvider.java:502)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider.serializeValue(DefaultSerializerProvider.java:341)
+	at com.fasterxml.jackson.databind.ObjectMapper.writeValue(ObjectMapper.java:3365)
+	at com.fasterxml.jackson.core.base.GeneratorBase.writeObject(GeneratorBase.java:422)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.writeDynamicEntity(DynamicEntitySerializer.java:32)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.serialize(DynamicEntitySerializer.java:19)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider._serialize(DefaultSerializerProvider.java:502)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider.serializeValue(DefaultSerializerProvider.java:341)
+	at com.fasterxml.jackson.databind.ObjectMapper.writeValue(ObjectMapper.java:3365)
+	at com.fasterxml.jackson.core.base.GeneratorBase.writeObject(GeneratorBase.java:422)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.writeDynamicEntity(DynamicEntitySerializer.java:32)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.serialize(DynamicEntitySerializer.java:19)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider._serialize(DefaultSerializerProvider.java:502)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider.serializeValue(DefaultSerializerProvider.java:341)
+	at com.fasterxml.jackson.databind.ObjectMapper.writeValue(ObjectMapper.java:3365)
+	at com.fasterxml.jackson.core.base.GeneratorBase.writeObject(GeneratorBase.java:422)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.writeDynamicEntity(DynamicEntitySerializer.java:32)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.serialize(DynamicEntitySerializer.java:19)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider._serialize(DefaultSerializerProvider.java:502)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider.serializeValue(DefaultSerializerProvider.java:341)
+	at com.fasterxml.jackson.databind.ObjectMapper.writeValue(ObjectMapper.java:3365)
+	at com.fasterxml.jackson.core.base.GeneratorBase.writeObject(GeneratorBase.java:422)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.writeDynamicEntity(DynamicEntitySerializer.java:32)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.serialize(DynamicEntitySerializer.java:19)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider._serialize(DefaultSerializerProvider.java:502)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider.serializeValue(DefaultSerializerProvider.java:341)
+	at com.fasterxml.jackson.databind.ObjectMapper.writeValue(ObjectMapper.java:3365)
+	at com.fasterxml.jackson.core.base.GeneratorBase.writeObject(GeneratorBase.java:422)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.writeDynamicEntity(DynamicEntitySerializer.java:32)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.serialize(DynamicEntitySerializer.java:19)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider._serialize(DefaultSerializerProvider.java:502)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider.serializeValue(DefaultSerializerProvider.java:341)
+	at com.fasterxml.jackson.databind.ObjectMapper.writeValue(ObjectMapper.java:3365)
+	at com.fasterxml.jackson.core.base.GeneratorBase.writeObject(GeneratorBase.java:422)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.writeDynamicEntity(DynamicEntitySerializer.java:32)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.serialize(DynamicEntitySerializer.java:19)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider._serialize(DefaultSerializerProvider.java:502)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider.serializeValue(DefaultSerializerProvider.java:341)
+	at com.fasterxml.jackson.databind.ObjectMapper.writeValue(ObjectMapper.java:3365)
+	at com.fasterxml.jackson.core.base.GeneratorBase.writeObject(GeneratorBase.java:422)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.writeDynamicEntity(DynamicEntitySerializer.java:32)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.serialize(DynamicEntitySerializer.java:19)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider._serialize(DefaultSerializerProvider.java:502)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider.serializeValue(DefaultSerializerProvider.java:341)
+	at com.fasterxml.jackson.databind.ObjectMapper.writeValue(ObjectMapper.java:3365)
+	at com.fasterxml.jackson.core.base.GeneratorBase.writeObject(GeneratorBase.java:422)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.writeDynamicEntity(DynamicEntitySerializer.java:32)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.serialize(DynamicEntitySerializer.java:19)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider._serialize(DefaultSerializerProvider.java:502)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider.serializeValue(DefaultSerializerProvider.java:341)
+	at com.fasterxml.jackson.databind.ObjectMapper.writeValue(ObjectMapper.java:3365)
+	at com.fasterxml.jackson.core.base.GeneratorBase.writeObject(GeneratorBase.java:422)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.writeDynamicEntity(DynamicEntitySerializer.java:32)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.serialize(DynamicEntitySerializer.java:19)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider._serialize(DefaultSerializerProvider.java:502)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider.serializeValue(DefaultSerializerProvider.java:341)
+	at com.fasterxml.jackson.databind.ObjectMapper.writeValue(ObjectMapper.java:3365)
+	at com.fasterxml.jackson.core.base.GeneratorBase.writeObject(GeneratorBase.java:422)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.writeDynamicEntity(DynamicEntitySerializer.java:32)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.serialize(DynamicEntitySerializer.java:19)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider._serialize(DefaultSerializerProvider.java:502)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider.serializeValue(DefaultSerializerProvider.java:341)
+	at com.fasterxml.jackson.databind.ObjectMapper.writeValue(ObjectMapper.java:3365)
+	at com.fasterxml.jackson.core.base.GeneratorBase.writeObject(GeneratorBase.java:422)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.writeDynamicEntity(DynamicEntitySerializer.java:32)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.serialize(DynamicEntitySerializer.java:19)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider._serialize(DefaultSerializerProvider.java:502)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider.serializeValue(DefaultSerializerProvider.java:341)
+	at com.fasterxml.jackson.databind.ObjectMapper.writeValue(ObjectMapper.java:3365)
+	at com.fasterxml.jackson.core.base.GeneratorBase.writeObject(GeneratorBase.java:422)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.writeDynamicEntity(DynamicEntitySerializer.java:32)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.serialize(DynamicEntitySerializer.java:19)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider._serialize(DefaultSerializerProvider.java:502)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider.serializeValue(DefaultSerializerProvider.java:341)
+	at com.fasterxml.jackson.databind.ObjectMapper.writeValue(ObjectMapper.java:3365)
+	at com.fasterxml.jackson.core.base.GeneratorBase.writeObject(GeneratorBase.java:422)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.writeDynamicEntity(DynamicEntitySerializer.java:32)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.serialize(DynamicEntitySerializer.java:19)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider._serialize(DefaultSerializerProvider.java:502)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider.serializeValue(DefaultSerializerProvider.java:341)
+	at com.fasterxml.jackson.databind.ObjectMapper.writeValue(ObjectMapper.java:3365)
+	at com.fasterxml.jackson.core.base.GeneratorBase.writeObject(GeneratorBase.java:422)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.writeDynamicEntity(DynamicEntitySerializer.java:32)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.serialize(DynamicEntitySerializer.java:19)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider._serialize(DefaultSerializerProvider.java:502)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider.serializeValue(DefaultSerializerProvider.java:341)
+	at com.fasterxml.jackson.databind.ObjectMapper.writeValue(ObjectMapper.java:3365)
+	at com.fasterxml.jackson.core.base.GeneratorBase.writeObject(GeneratorBase.java:422)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.writeDynamicEntity(DynamicEntitySerializer.java:32)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.serialize(DynamicEntitySerializer.java:19)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider._serialize(DefaultSerializerProvider.java:502)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider.serializeValue(DefaultSerializerProvider.java:341)
+	at com.fasterxml.jackson.databind.ObjectMapper.writeValue(ObjectMapper.java:3365)
+	at com.fasterxml.jackson.core.base.GeneratorBase.writeObject(GeneratorBase.java:422)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.writeDynamicEntity(DynamicEntitySerializer.java:32)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.serialize(DynamicEntitySerializer.java:19)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider._serialize(DefaultSerializerProvider.java:502)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider.serializeValue(DefaultSerializerProvider.java:341)
+	at com.fasterxml.jackson.databind.ObjectMapper.writeValue(ObjectMapper.java:3365)
+	at com.fasterxml.jackson.core.base.GeneratorBase.writeObject(GeneratorBase.java:422)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.writeDynamicEntity(DynamicEntitySerializer.java:32)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.serialize(DynamicEntitySerializer.java:19)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider._serialize(DefaultSerializerProvider.java:502)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider.serializeValue(DefaultSerializerProvider.java:341)
+	at com.fasterxml.jackson.databind.ObjectMapper.writeValue(ObjectMapper.java:3365)
+	at com.fasterxml.jackson.core.base.GeneratorBase.writeObject(GeneratorBase.java:422)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.writeDynamicEntity(DynamicEntitySerializer.java:32)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.serialize(DynamicEntitySerializer.java:19)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider._serialize(DefaultSerializerProvider.java:502)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider.serializeValue(DefaultSerializerProvider.java:341)
+	at com.fasterxml.jackson.databind.ObjectMapper.writeValue(ObjectMapper.java:3365)
+	at com.fasterxml.jackson.core.base.GeneratorBase.writeObject(GeneratorBase.java:422)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.writeDynamicEntity(DynamicEntitySerializer.java:32)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.serialize(DynamicEntitySerializer.java:19)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider._serialize(DefaultSerializerProvider.java:502)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider.serializeValue(DefaultSerializerProvider.java:341)
+	at com.fasterxml.jackson.databind.ObjectMapper.writeValue(ObjectMapper.java:3365)
+	at com.fasterxml.jackson.core.base.GeneratorBase.writeObject(GeneratorBase.java:422)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.writeDynamicEntity(DynamicEntitySerializer.java:32)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.serialize(DynamicEntitySerializer.java:19)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider._serialize(DefaultSerializerProvider.java:502)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider.serializeValue(DefaultSerializerProvider.java:341)
+	at com.fasterxml.jackson.databind.ObjectMapper.writeValue(ObjectMapper.java:3365)
+	at com.fasterxml.jackson.core.base.GeneratorBase.writeObject(GeneratorBase.java:422)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.writeDynamicEntity(DynamicEntitySerializer.java:32)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.serialize(DynamicEntitySerializer.java:19)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider._serialize(DefaultSerializerProvider.java:502)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider.serializeValue(DefaultSerializerProvider.java:341)
+	at com.fasterxml.jackson.databind.ObjectMapper.writeValue(ObjectMapper.java:3365)
+	at com.fasterxml.jackson.core.base.GeneratorBase.writeObject(GeneratorBase.java:422)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.writeDynamicEntity(DynamicEntitySerializer.java:32)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.serialize(DynamicEntitySerializer.java:19)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider._serialize(DefaultSerializerProvider.java:502)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider.serializeValue(DefaultSerializerProvider.java:341)
+	at com.fasterxml.jackson.databind.ObjectMapper.writeValue(ObjectMapper.java:3365)
+	at com.fasterxml.jackson.core.base.GeneratorBase.writeObject(GeneratorBase.java:422)
+	at com.scm_saas.SCM_SaaS.util.DynamicEntitySerializer.writeDynamicEntity(DynamicEntitySerializer.java:32)
+2025-01-12 00:03:49 INFO  org.mongodb.driver.cluster - Exception in monitor thread while connecting to server localhost:27017
+com.mongodb.MongoSocketReadTimeoutException: Timeout while receiving message
+	at com.mongodb.internal.connection.InternalStreamConnection.createReadTimeoutException(InternalStreamConnection.java:824)
+	at com.mongodb.internal.connection.InternalStreamConnection.translateReadException(InternalStreamConnection.java:812)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveResponseBuffers(InternalStreamConnection.java:862)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveCommandMessageResponse(InternalStreamConnection.java:517)
+	at com.mongodb.internal.connection.InternalStreamConnection.receive(InternalStreamConnection.java:469)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitor.lookupServerDescription(DefaultServerMonitor.java:249)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitor.run(DefaultServerMonitor.java:176)
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.base/sun.nio.ch.NioSocketImpl.timedRead(NioSocketImpl.java:283)
+	at java.base/sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:309)
+	at java.base/sun.nio.ch.NioSocketImpl.read(NioSocketImpl.java:350)
+	at java.base/sun.nio.ch.NioSocketImpl$1.read(NioSocketImpl.java:803)
+	at java.base/java.net.Socket$SocketInputStream.read(Socket.java:966)
+	at com.mongodb.internal.connection.SocketStream.read(SocketStream.java:182)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveResponseBuffers(InternalStreamConnection.java:829)
+	... 4 common frames omitted
+2025-01-12 00:03:50 INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, cryptd=false, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=25, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=83746667, minRoundTripTimeNanos=0}
+2025-01-13 13:27:34 INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-01-13 13:27:36 INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-01-13 13:27:37 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'

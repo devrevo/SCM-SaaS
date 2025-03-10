@@ -1,0 +1,268 @@
+workflowName: "Logistique Multi-Complexe & Autorisation Client"
+version: 3.0
+
+entities:
+  - name: "InboundShipment"
+    description: "Représente un lot entrant arrivant à l'entrepôt."
+    fields:
+      - fieldName: "inboundId"
+        type: "String"
+        required: true
+        unique: true
+      - fieldName: "status"
+        type: "String"
+        default: "Received"  # Possibles : Received, CustomsHold, Cleared
+      - fieldName: "arrivalDate"
+        type: "Date"
+        default: "NOW"
+    relationships:
+      # Relation depuis InboundShipment vers InboundItem
+      - type: "oneToMany"
+        targetEntity: "InboundItem"
+        relationName: "items"
+      # Relation depuis InboundShipment vers Warehouse
+      - type: "manyToOne"
+        targetEntity: "Warehouse"
+        relationName: "destinationWarehouse"
+      # Relation depuis InboundShipment vers CustomsDeclaration
+      - type: "oneToOne"
+        targetEntity: "CustomsDeclaration"
+        relationName: "customsDeclaration"
+
+  - name: "InboundItem"
+    description: "Articles inclus dans un lot entrant."
+    fields:
+      - fieldName: "productSKU"
+        type: "String"
+        required: true
+      - fieldName: "quantity"
+        type: "Number"
+        required: true
+    relationships:
+      # Relation inverse : chaque InboundItem appartient à un InboundShipment
+      - type: "manyToOne"
+        targetEntity: "InboundShipment"
+        relationName: "shipment"
+
+  - name: "CustomsDeclaration"
+    description: "Détails relatifs au dédouanement des lots entrants."
+    fields:
+      - fieldName: "declareId"
+        type: "String"
+        required: true
+        unique: true
+      - fieldName: "status"
+        type: "String"
+        default: "Pending"  # Possibles : Pending, Approved, Rejected
+      - fieldName: "declaredValue"
+        type: "Number"
+        default: 0
+    relationships:
+      # Relation inverse : si besoin, la déclaration douanière connaît son lot entrant
+      - type: "oneToOne"
+        targetEntity: "InboundShipment"
+        relationName: "inboundShipment"
+
+  - name: "Warehouse"
+    description: "Entrepôt physique pour le stockage des marchandises."
+    fields:
+      - fieldName: "warehouseId"
+        type: "String"
+        required: true
+        unique: true
+      - fieldName: "name"
+        type: "String"
+      - fieldName: "location"
+        type: "String"
+    relationships:
+      # Relation inverse : un entrepôt possède plusieurs InboundShipments
+      - type: "oneToMany"
+        targetEntity: "InboundShipment"
+        relationName: "inboundShipments"
+      # Relation inverse : un entrepôt peut avoir plusieurs stocks Inventory
+      - type: "oneToMany"
+        targetEntity: "Inventory"
+        relationName: "inventoryRecords"
+
+  - name: "Inventory"
+    description: "Gère le stock de produits dans un entrepôt donné."
+    fields:
+      - fieldName: "productSKU"
+        type: "String"
+        required: true
+      - fieldName: "quantityOnHand"
+        type: "Number"
+        default: 0
+      - fieldName: "reorderPoint"
+        type: "Number"
+        default: 10
+    relationships:
+      # L’inventaire appartient à un Warehouse particulier
+      - type: "manyToOne"
+        targetEntity: "Warehouse"
+        relationName: "warehouse"
+
+  - name: "Client"
+    description: "Représente un client ou destinataire des marchandises."
+    fields:
+      - fieldName: "clientId"
+        type: "String"
+        required: true
+        unique: true
+      - fieldName: "name"
+        type: "String"
+        required: true
+      - fieldName: "clearanceStatus"
+        type: "String"
+        default: "Pending"  # e.g. Pending, Approved, Suspended
+      - fieldName: "creditLimit"
+        type: "Number"
+        default: 5000
+    relationships:
+      # Relation inverse : un client peut avoir plusieurs expéditions sortantes
+      - type: "oneToMany"
+        targetEntity: "OutboundShipment"
+        relationName: "shipments"
+
+  - name: "OutboundShipment"
+    description: "Décrit un envoi sortant à destination d'un client."
+    fields:
+      - fieldName: "outboundId"
+        type: "String"
+        required: true
+        unique: true
+      - fieldName: "status"
+        type: "String"
+        default: "Pending"  # Exemples : Pending, Ready, Dispatched, Delivered
+      - fieldName: "shippingCarrier"
+        type: "String"
+        default: "FedEx"
+      - fieldName: "trackingNumber"
+        type: "String"
+      - fieldName: "dispatchDate"
+        type: "Date"
+    relationships:
+      # Relation depuis OutboundShipment vers Client
+      - type: "manyToOne"
+        targetEntity: "Client"
+        relationName: "client"
+      # Relation depuis OutboundShipment vers OutboundItem
+      - type: "oneToMany"
+        targetEntity: "OutboundItem"
+        relationName: "items"
+
+  - name: "OutboundItem"
+    description: "Articles inclus dans un envoi sortant."
+    fields:
+      - fieldName: "productSKU"
+        type: "String"
+        required: true
+      - fieldName: "quantity"
+        type: "Number"
+        required: true
+    relationships:
+      # Relation inverse : chaque OutboundItem appartient à un OutboundShipment
+      - type: "manyToOne"
+        targetEntity: "OutboundShipment"
+        relationName: "shipment"
+
+roles:
+  - roleName: "WarehouseManager"
+    permissions:
+      - entity: "InboundShipment"
+        operations: ["CREATE", "UPDATE", "VIEW"]
+      - entity: "OutboundShipment"
+        operations: ["CREATE", "UPDATE", "VIEW"]
+      - entity: "Inventory"
+        operations: ["UPDATE", "VIEW"]
+      - entity: "Client"
+        operations: ["VIEW"]  # Peut consulter le statut du client, mais pas le modifier
+
+  - roleName: "ClearanceOfficer"
+    permissions:
+      - entity: "CustomsDeclaration"
+        operations: ["UPDATE", "VIEW"]
+      - entity: "InboundShipment"
+        operations: ["VIEW"]
+
+  - roleName: "ClientAdmin"
+    permissions:
+      - entity: "Client"
+        operations: ["CREATE", "UPDATE", "VIEW"]
+      - entity: "OutboundShipment"
+        operations: ["CREATE", "VIEW"]
+      - entity: "InboundShipment"
+        operations: ["VIEW"]
+
+  - roleName: "Admin"
+    permissions:
+      - entity: "*"
+        operations: ["ALL"]  # Accès super-utilisateur global
+
+businessRules:
+  - name: "SetInboundHoldOnCustoms"
+    description: "Si un nouveau lot entrant a une déclaration douanière, passer le statut en CustomsHold."
+    triggerOnEntity: "InboundShipment"
+    triggerOnEvent: "CREATE"
+    conditions:
+      - "customsDeclaration is not null"
+    actions:
+      - "set status = 'CustomsHold'"
+
+  - name: "ApproveInboundUpdatesInventory"
+    description: "Quand la douane est approuvée, passer le lot entrant en Cleared et mettre à jour le stock."
+    triggerOnEntity: "CustomsDeclaration"
+    triggerOnEvent: "UPDATE"
+    conditions:
+      - "old status == 'Pending'"
+      - "new status == 'Approved'"
+    actions:
+      - "set related InboundShipment.status = 'Cleared'"
+      - "for each InboundItem in InboundShipment.items => update Inventory.quantityOnHand += InboundItem.quantity"
+
+  - name: "ClientClearanceCheck"
+    description: "Bloque la création d'un envoi sortant si le client n'est pas approuvé."
+    triggerOnEntity: "OutboundShipment"
+    triggerOnEvent: "CREATE"
+    conditions:
+      - "client.clearanceStatus != 'Approved'"
+    actions:
+      - "abort with message 'Le client n'est pas autorisé pour l'envoi'"
+
+  - name: "AutoDispatchIfStockAvailable"
+    description: "Si le stock est suffisant et le client approuvé, expédier automatiquement."
+    triggerOnEntity: "OutboundShipment"
+    triggerOnEvent: "CREATE"
+    conditions:
+      - "client.clearanceStatus == 'Approved'"
+      - "check each OutboundItem.quantity <= Inventory.quantityOnHand"
+    actions:
+      - "set status = 'Dispatched'"
+      - "reduce Inventory.quantityOnHand by each item’s quantity"
+      - "set dispatchDate = current date/time"
+
+  - name: "NotifyDelayedShipment"
+    description: "Si un envoi sortant reste en Pending plus de X jours, notifier le client."
+    triggerOnEntity: "OutboundShipment"
+    triggerOnEvent: "UPDATE"
+    conditions:
+      - "status == 'Pending'"
+      - "creationDate older than 2 days"
+    actions:
+      - "send notification to client with message 'Envoi retardé'"
+
+operations:
+  - name: "ManualDispatch"
+    description: "Expédier manuellement un envoi si seule une partie du stock est disponible."
+    steps:
+      - "Autoriser une expédition partielle des articles disponibles"
+      - "Créer un nouvel OutboundShipment pour les articles non disponibles"
+      - "Mettre à jour le statut de l'envoi actuel à 'Dispatched'"
+      - "Envoyer une notification au client concernant l'expédition partielle"
+
+  - name: "SuspendClient"
+    description: "Opération administrative pour suspendre l'autorisation d'un client."
+    steps:
+      - "Vérifier les éventuelles factures impayées ou problèmes de conformité"
+      - "set client.clearanceStatus = 'Suspended'"
+      - "Consigner la raison dans un journal d'audit"
